@@ -1,0 +1,8 @@
+Exercise: Conditional Statements, Loops, Functions
+-------------------------------------------------------------------------------
+
+Implement a funcation called "is_palindrome()" which checks if a given 
+string is a palindrome (True) or not (False).
+
+Note that: A palindrome is a sequence of characters which reads the same 
+backward as forward. 

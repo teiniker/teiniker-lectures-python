@@ -1,0 +1,5 @@
+Exercise: Conditional Statements, Loops, Functions, Maps
+-------------------------------------------------------------------------------
+
+Implement a function called "char_frequency()" which counts the frequency
+of characters in the given "in_str" string.

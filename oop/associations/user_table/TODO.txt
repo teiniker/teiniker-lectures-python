@@ -1,0 +1,13 @@
+Exercise: Classes and Associations
+-------------------------------------------------------------------------------
+
+Implement the classes User and UserTable which are related in the
+following way:
+    [UserTable] ---[*]-> [User]
+ 
+A) Class User 
+    Attributes: oid, username, password
+    Methods: __init__(), __str__(), __eq__()
+
+B) Class UserTable
+   Methods: __init__(), insert(), find_by_id(), find_all()

@@ -1,0 +1,10 @@
+Exercise: Coditional Statements, Loops, Functions- Fibonacci
+-------------------------------------------------------------------------------
+
+Implement the function "fibonacci_numbers()" which calculates the fibonacci 
+sequence with a given size (number of elements).
+
+Note that:
+     x[0] = 0
+     x[1] = 1
+     x[n] = x[n-1] + x[n-2]

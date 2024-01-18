@@ -1,0 +1,8 @@
+Exercise: Conditional Statements, Functions - Leap Year
+-------------------------------------------------------------------------------
+
+Implement the function "is_leap_year()".
+
+Note that: year % 4   is     a leap year: e.g. 2020
+           year % 100 is not a leap year: e.g. 2100 
+           year % 400 is     a leap year: e.g. 2000

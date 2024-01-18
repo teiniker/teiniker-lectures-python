@@ -1,0 +1,21 @@
+Exercise: OO Programming - Refactoring
+-------------------------------------------------------------------------------
+
+Given the two classes "Voltmeter" and "Amperemeter" which implement nearly the 
+same set of attributes.
+
+Refactor the given Python code:
+
+A) Extract Base Class
+Write an abstract base class (ABC) named "Instrument" which implements the common 
+attributes and a coresponding constructor.
+Inherit "Voltmeter" and "Amperemeter" from "Instrument".
+Define the "measured_value()" method as abstract method, so the each subclass has to 
+implement this method.
+
+B) Use Polymorphism 
+In the function signature "def is_in_range(instr, value:float)->bool:" add a 
+type hint so that the function only accepts subclasses of "Instrument".
+
+Note that the verification code (assert statements) should not be changed during 
+the refactoring.
