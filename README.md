@@ -1,4 +1,4 @@
-# Python Programming By Example
+# Python Programming by Example
 
 In this repository, we use the Python programming language to learn about different testing techniques.
 For this reason, it is important to understand the basics of Python.
