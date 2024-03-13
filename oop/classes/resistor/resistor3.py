@@ -1,25 +1,31 @@
 
 class Resistor():
-    """Class using operator overloading and magic methods."""
-
-    def __init__(self, value:int, tolerance:int=2) -> None:
+    def __init__(self, value:int, tolerance:int):
         self.value = value
         self.tolerance = tolerance
 
-    def __repr__(self) -> str:
-        return f'Resistor({self.value}, {self.tolerance})'
+    @property
+    def value(self) -> int:
+        print(f'get value: {self._value}')
+        return self._value
 
-    def __str__(self) -> str:
-        return f'Resistor: value={self.value}, tolerance={self.tolerance}'
+    @value.setter
+    def value(self, value:int):
+        print(f'set value: {value}')
+        self._value = value
 
-    def __eq__(self, other) -> bool:
-        if self.value == other.value and self.tolerance == other.tolerance:
-            return True
-        else:
-            return False
+    @property
+    def tolerance(self) -> int:
+        print(f'get tolerance: {self._tolerance}')
+        return self._tolerance
 
-    def __add__(self, other): # if we use '+' Python invokes __add__()
-        value = self.value + other.value
+    @tolerance.setter
+    def tolerance(self, tolerance:int):
+        print(f'set tolerance: {tolerance}')
+        self._tolerance = tolerance
+
+    def __add__(self, other):   # + operator
+        value = self._value + other._value
         tolerance = self._max(self.tolerance, other.tolerance)
         return Resistor(value, tolerance)
 
@@ -32,24 +38,15 @@ class Resistor():
 if __name__ == '__main__':
 
     # Verify implementation
-    r1 = Resistor(1000)
-    assert 1000 == r1.value
-    assert 2 == r1.tolerance
+    r1 = Resistor(100,1)
+    assert 100 == r1.value          # invoke value()
+    assert 1 == r1.tolerance        # invoke tolerance()
 
-    r2 = Resistor(470,5)
+    r2 = Resistor(330,5)
+    r2.value = 470                  # invoke value(470)
     assert 470 == r2.value
     assert 5 == r2.tolerance
 
-    r = Resistor(330, 2)
-    assert 'Resistor(330, 2)' == repr(r)                # invoke __repr__()
-
-    r = Resistor(330, 2)
-    assert 'Resistor: value=330, tolerance=2' == str(r) # invoke __str__()
-
-    r = r1 + r2                                         # invoke __add__()
-    assert 1000+470 == r.value
-
-    r1 = Resistor(2700,2)
-    r2 = Resistor(2700,2)
-    assert r1 is r1
-    assert r1 == r2 # __eq__()
+    r = r1 + r2                     # invoke __add__()
+    assert 100+470 == r.value
+    assert 5 == r.tolerance
