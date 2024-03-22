@@ -190,11 +190,29 @@ x = [a, n]
 assert [['a', 'b', 'c'], [1, 2, 3]] == x
 ```
 
+## Tubles
+
+A tuple consists of a number of values separated by commas.
+Tuples are **immutable**, and usually contain a heterogeneous sequence of elements. 
+
+
+
+
+A special problem is the construction of tuples containing 0 or 1 items: the syntax has some extra quirks to accommodate these. 
+**Empty tuples** are constructed by an empty pair of parentheses; 
+a **tuple with one item** is constructed by following a value with a comma 
+(it is not sufficient to enclose a single value in parentheses). 
+
+
 
 ## References
 * [Python Language Reference: Data Model](https://docs.python.org/3/reference/datamodel.html)
+
 * [Python Tutorial: Numbers](https://docs.python.org/3/tutorial/introduction.html#numbers)
 * [Python Tutorial: Strings](https://docs.python.org/3/tutorial/introduction.html#strings)
 * [Python Tutorial: List](https://docs.python.org/3/tutorial/introduction.html#lists)
+
+* [Python Tutorial: Tuples](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)
+
 
  *Egon Teiniker, 2020-2023, GPL v3.0*

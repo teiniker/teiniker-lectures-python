@@ -1,7 +1,7 @@
 
 class Resistor():
     def __init__(self, value:int, tolerance:int):
-        self.value = value
+        self.value = value      # invoke value(value)
         self.tolerance = tolerance
 
     @property
@@ -36,16 +36,16 @@ class Resistor():
 
 
 if __name__ == '__main__':
+    r2 = Resistor(330,5)
+    r2.value = 470                  # invoke value(470)
+    assert 470 == r2.value
+    assert 5 == r2.tolerance
 
     # Verify implementation
     r1 = Resistor(100,1)
     assert 100 == r1.value          # invoke value()
     assert 1 == r1.tolerance        # invoke tolerance()
 
-    r2 = Resistor(330,5)
-    r2.value = 470                  # invoke value(470)
-    assert 470 == r2.value
-    assert 5 == r2.tolerance
 
     r = r1 + r2                     # invoke __add__()
     assert 100+470 == r.value
