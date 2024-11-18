@@ -190,7 +190,7 @@ x = [a, n]
 assert [['a', 'b', 'c'], [1, 2, 3]] == x
 ```
 
-## Tubles
+## Tuples
 
 A tuple consists of a number of values separated by commas.
 Tuples are **immutable**, and usually contain a heterogeneous sequence of elements. 
