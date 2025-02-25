@@ -6,10 +6,7 @@
     },
     "code-runner.fileDirectoryAsCwd": true,
     "code-runner.clearPreviousOutput": true,
-    "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true,
-    "python.linting.mypyEnabled": true,
-    "python.linting.pylintEnabled": true,
+    "code-runner.runInTerminal": true,
     "pylint.args": [
         "--disable=missing-module-docstring,missing-class-docstring,missing-function-docstring"
     ]
