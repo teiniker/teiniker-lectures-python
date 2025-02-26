@@ -35,7 +35,7 @@ import fibo as fib
 _Example_: There is a variant of the import statement that **imports names from a module directly** into the importing 
 module’s symbol table.
 ```Python
-from fibo import fib, fib2
+from fibo import fib
 
 fib(500)
 ```
@@ -108,4 +108,4 @@ echo.echofilter(input, output, delay=0.7, atten=4)
 ## References
 * [Modules](https://docs.python.org/3/tutorial/modules.html)
 
-*Egon Teiniker, 2020-2023, GPL v3.0*
+*Egon Teiniker, 2020-2025, GPL v3.0*
