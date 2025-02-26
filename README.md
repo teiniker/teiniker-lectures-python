@@ -47,6 +47,9 @@ Each of these short videos repeats a specific language construct of the Python p
     * [YouTube (Corey Schafer): Import Modules and Exploring The Standard Library](https://youtu.be/CqvZ3vGoGs0)
     * [YouTube (Corey Schafer): if `__name__ == '__main__'`](https://youtu.be/sugvnHA7ElY)
 
+  * **Packages** 
+    * [Introduction](basics/packages/)
+    
   * **Virtual Environments**
     * [Introduction](basics/virtual-environments/README.md)
     * [YouTube (Corey Schafer): VENV (Mac & Linux) - How to Use Virtual Environments with the Built-In venv Module](https://youtu.be/Kg1Yvry_Ydk?si=GDD5uxD9AyOJynIc)
