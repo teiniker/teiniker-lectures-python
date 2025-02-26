@@ -1,4 +1,4 @@
-def max_value(value_a:int, value_b:int)->int:
+def max_value(value_a, value_b):
     """Calculate the maximum of two numbers"""
     if value_a > value_b:
         return value_a

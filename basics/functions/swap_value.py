@@ -1,6 +1,6 @@
 # Multiple return values of a function
 
-def swap_value(value_a:int, value_b:int)->tuple[int,int]:
+def swap_value(value_a, value_b):
     """Change the values of a and b"""
     return value_b, value_a
 

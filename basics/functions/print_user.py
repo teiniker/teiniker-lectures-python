@@ -1,8 +1,8 @@
-def user_to_string(username:str, password:str, group:str='user')->str:
+def user_to_string(username, password, group='user'):
     """Print username and passwort to the console."""
     return f'username:"{username}" password:"{password}" group:"{group}"'
 
-def user_to_map(username:str, password:str, group:str='user')->dict[str,str]:
+def user_to_map(username, password, group='user'):
     """Collects a user's data in a map."""
     result = {'username':username, 'password':password, 'group':group}
     return result

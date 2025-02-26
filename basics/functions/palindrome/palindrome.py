@@ -1,4 +1,4 @@
-def is_palindrome(in_str:str)->bool:
+def is_palindrome(in_str):
     """Check if the given string is a palindrome."""
     for i in range(0, int(len(in_str)/2)):       # Run loop from 0 to len/2
         if in_str[i] != in_str[len(in_str)-i-1]:

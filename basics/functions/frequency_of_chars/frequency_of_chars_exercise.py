@@ -1,5 +1,5 @@
 
-def char_frequency(in_str:str)->dict[str,int]:
+def char_frequency(in_str):
     """Count the frequency of characters in a given string and return this statistics in a Map"""
     pass 
 

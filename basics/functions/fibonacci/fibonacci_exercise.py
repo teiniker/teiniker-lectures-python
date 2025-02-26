@@ -1,5 +1,5 @@
 
-def fibonacci_numbers(size:int)->list[int]:
+def fibonacci_numbers(size):
     """Calculate the Fibonacci sequence of a given size."""
     pass
 

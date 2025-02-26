@@ -1,5 +1,5 @@
 
-def is_leap_year(year:int)->bool:
+def is_leap_year(year):
     """Check if a given year is a leap year or not."""
     pass
 
