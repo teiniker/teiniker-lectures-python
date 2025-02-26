@@ -56,6 +56,7 @@ Each of these short videos repeats a specific language construct of the Python p
 
 
   ## Object-Oriented Programming
+  
   * **Classes**
     * [Introduction](oop/)
     * [YouTube (Corey Schafer): Classes and Instances](https://youtu.be/ZDa-Z5JzLYM)
@@ -64,19 +65,19 @@ Each of these short videos repeats a specific language construct of the Python p
     * [YouTube (Corey Schafer): Class Variables](https://youtu.be/BJ-VvGyQxho)
     * [YouTube (Corey Schafer): Classmethods and Staticmethods](https://youtu.be/rq8cL2XMM5M)
     
-    * **Associations**
-      * [Introduction](oop/associations/)
+  * **Associations**
+    * [Introduction](oop/associations/)
 
-    * **Inheritance**
-      * [Introduction](oop/inheritance/)
-      * [YouTube (Corey Schafer): Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
+  * **Inheritance**
+    * [Introduction](oop/inheritance/)
+    * [YouTube (Corey Schafer): Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
 
-    * **Enumerations**
+  * **Enumerations**
     * [Introduction](oop/enumerations/)
     * [YouTube: Using Enum in Python](https://youtu.be/gPPDXgCMZ0k)
     * [Python HOWTOs: Enum](https://docs.python.org/3.11/howto/enum.html)
 
-    * **Exceptions**
+  * **Exceptions**
     * [Introduction](oop/exceptions/)
     * [YouTube (Corey Schafer): Using Try/Except Blocks for Error Handling](https://youtu.be/NIWwJbo-9_8)
     * [YouTube (Corey Schafer): Context Managers - Efficiently Managing Resources](https://youtu.be/-aKFBoZpiqA)
