@@ -12,7 +12,7 @@ class Weekday(Enum):
 day_map_german = {
     Weekday.MONDAY:'Montag',
     Weekday.TUESDAY:'Dienstag',
-    Weekday.WEDNESDAY:'Mittwoch', 
+    Weekday.WEDNESDAY:'Mittwoch',
     Weekday.THURSDAY:'Donnerstag',
     Weekday.FRIDAY:'Freitag',
     Weekday.SATURDAY:'Samstag',
@@ -23,7 +23,11 @@ def print_day_german(day):
     print(day_map_german[day])
 
 def is_working_day(day):
-    if day == Weekday.MONDAY or day == Weekday.TUESDAY or day == Weekday.WEDNESDAY or day == Weekday.THURSDAY or day == Weekday.FRIDAY:
+    if day == Weekday.MONDAY \
+        or day == Weekday.TUESDAY \
+        or day == Weekday.WEDNESDAY \
+        or day == Weekday.THURSDAY \
+        or day == Weekday.FRIDAY:
         return True
     else:
         return False

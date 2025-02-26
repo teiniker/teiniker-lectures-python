@@ -8,21 +8,19 @@ class DataAccessObject:
         self.filename = filename
 
     def read_data(self):
-        file=None
         try:
-            values = []
-            file = open(self.filename, 'r', encoding="utf-8")
-            reader = csv.reader(file, delimiter=',')
-            data = list(reader)
-            for value in data:
-                values.append(float(value[1]))
-            return values
+            with open(self.filename, 'r', encoding="utf-8") as file:
+                reader = csv.reader(file, delimiter=',')
+                data = list(reader)
+                values = [float(row[1]) for row in data]
+                return values
         except FileNotFoundError as ex:
             raise DataAccessError(f"File {self.filename} not found!") from ex
-        finally:
-            print("finally")
-            if file:
-                file.close()
+
+# Context Manager (with Statement): The with open(...) as file: 
+# construct is used to open the file. 
+# This ensures that the file is automatically closed after the 
+# block is executed, even if an exception occurs.
 
 
 # Verify Implementation

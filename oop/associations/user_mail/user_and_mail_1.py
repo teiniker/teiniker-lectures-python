@@ -1,29 +1,29 @@
 # Directed association between classes (one-to-one)
 #
-#   [User]---1->[Mail]
+#   [User]---[1]->[Mail]
 
 class Mail():
-    def __init__(self, address:str)->None:
+    def __init__(self, address):
         self.address = address
 
-    def __repr__(self)->str:
+    def __repr__(self):
         return f"Mail('{self.address}')"
 
-    def __str__(self)->str:
+    def __str__(self):
         return f"Mail: address='{self.address}'"
 
-    def __eq__(self, other)-> bool:
+    def __eq__(self, other):
         return self.address == other.address
 
 
 class User():
     """Model of a user having only one mail addresse."""
 
-    def __init__(self, oid:int, username:str, password:str, mail:Mail)->None:
+    def __init__(self, oid, username, password, mail):
         self.oid = oid
         self.username = username
         self.password = password
-        self.mail = mail
+        self.mail = mail    # ---[1]-> Mail
 
     def __repr__(self)->str:
         return f"User({self.oid}, '{self.username}', '{self.password}', {repr(self.mail)})"

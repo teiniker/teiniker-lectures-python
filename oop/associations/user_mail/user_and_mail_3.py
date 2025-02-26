@@ -1,29 +1,28 @@
 # Bidirectional association between classes (one-to-many)
 #
-#   [User]-1---*-[Mail]
+#   [User]-[1]---[*]-[Mail]
 
 class Mail():
     """Model of an email address."""
 
-    def __init__(self, address:str, user=None)->None:
+    def __init__(self, address, user=None):
         self.address = address
-        self.user = user
+        self.user = user    # ----[1]->[User]
 
-    # Workaround: to use a forward declaration set the unknown type in quotes!
-    def set_user(self, user:"User")->None:
+    def set_user(self, user):
         self.user = user
 
 
 class User():
     """Model of a user having many mail addresses."""
 
-    def __init__(self, oid:int, username:str, password:str)->None:
+    def __init__(self, oid, username, password):
         self.oid = oid
         self.username = username
         self.password = password
-        self.mails:list[Mail] = []
+        self.mails = [] # ----[*]->[Mail]
 
-    def add_mail(self, mail:Mail)->None:
+    def add_mail(self, mail):
         mail.set_user(self)
         self.mails.append(mail)
 

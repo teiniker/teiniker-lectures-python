@@ -1,32 +1,32 @@
 class Resistor():
     """Model of a resistor with a given tolerance."""
 
-    def __init__(self, value:int, tolerance:int)->None:
+    def __init__(self, value, tolerance):
         self.value = value
         self.tolerance = tolerance
 
     @property
-    def value(self)->int:
+    def value(self):
         return self._value
 
     @value.setter
-    def value(self, value:int):
+    def value(self, value):
         if value < 0:
             raise ValueError('Invalid value!')
         self._value = value
 
     @property
-    def tolerance(self)->int:
+    def tolerance(self):
         return self._tolerance
 
     @tolerance.setter
-    def tolerance(self, tolerance:int):
+    def tolerance(self, tolerance):
         if tolerance < 0:
             raise ValueError('Invalid tolerance!')
         self._tolerance = tolerance
 
 
-    def __add__(self, other:"Resistor"):
+    def __add__(self, other):
         value = self._value + other._value
         tolerance = self._max(self.tolerance, other.tolerance)
         return Resistor(value, tolerance)
@@ -42,7 +42,7 @@ if __name__ == '__main__':
 
     # Verify implementation
 
-#    r1 = Resistor(-1000, 1)
+    # r1 = Resistor(-1000, 1)
 
     # try:
     #     r1 = Resistor(1000, -1)
@@ -51,20 +51,19 @@ if __name__ == '__main__':
     #     print(f"Resistor object can't be created: {e}")
 
 
-    # try:
-    #     r1 = Resistor(-1000, 2)
-    #     #...
-
-    # except ValueError as e:
-    #     print(f"Resistor object can't be created: {e}")
-    # finally:
-    #     print("Do some clean-up.")
-
-
     try:
-        r1 = Resistor(-1000, 1)
+        r1 = Resistor(-1000, 2)
         #...
     except ValueError as e:
         print(f"Resistor object can't be created: {e}")
-    else:
-        print("No exception thrown.")
+    finally:
+        print("Do some clean-up.")
+
+
+    # try:
+    #    r1 = Resistor(-1000, 1)
+    #    #...
+    # except ValueError as e:
+    #    print(f"Resistor object can't be created: {e}")
+    # else:
+    #    print("No exception thrown.")

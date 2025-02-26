@@ -1,43 +1,43 @@
 class Entity():
     """Base class for entity classed which provide an id."""
-    def __init__(self, oid:int)->None:
+    def __init__(self, oid):
         self.oid = oid
 
-    def __eq__(self, other)->bool:
+    def __eq__(self, other):
         return self.oid == other.oid
 
 
 class Product(Entity):
     """Product class which supports a description and a price."""
-    def __init__(self, oid:int, description:str, price:float)->None:
+    def __init__(self, oid, description, price):
         super().__init__(oid)
         self.description = description
         self.price = price
 
-    def __str__(self)->str:
+    def __str__(self):
         return f'Product: id={self.oid}, description="{self.description}", price={self.price}'
 
 
 class OrderLine(Entity):
-    def __init__(self, oid:int, quantity:int, product:Product)->None:
+    def __init__(self, oid, quantity, product):
         super().__init__(oid)
         self.quantity = quantity
-        self.product = product
+        self.product = product  # ---[1]-> Product
 
-    def __str__(self)->str:
+    def __str__(self):
         return f'OrderLine: id={self.oid}, quantity={self.quantity}, product={self.product}'
 
 
 class Order(Entity):
-    def __init__(self, oid:int, name:str)->None:
+    def __init__(self, oid, name):
         super().__init__(oid)
         self.name = name
-        self.lines:list[OrderLine] = []
+        self.lines = [] # ---[*]-> [OrderLines]
 
-    def add_line(self, line:OrderLine)->None:
+    def add_line(self, line):
         self.lines.append(line)
 
-    def __str__(self)->str:
+    def __str__(self):
         lines_str = '; '.join([str(elem) for elem in self.lines])
         return f'Order: id={self.oid}, name={self.name}, lines=[{lines_str}]'
 

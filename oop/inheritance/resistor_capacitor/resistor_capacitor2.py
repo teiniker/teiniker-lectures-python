@@ -1,37 +1,28 @@
-from abc import ABC
-
-# We can implement an abstract base class using the abc module.
-# An abstract base class is a class that cannot be instantiated
-# on its own, but is used to define a common interface for its
-# subclasses.
-# Any class that inherits from an abstract base class must
-# implement all of its abstract methods.
-
-class Part(ABC):
-    def __init__(self, value:int, tolerance:int)->None:
+class Part():   # Base Class (aka Super Class)
+    def __init__(self, value, tolerance):
         self.tolerance = tolerance
         self.value= value
-    # Use @abstractmethod for abstract methods
 
-class Resistor(Part):
-    def __init__(self, value:int, tolerance:int=2)->None:
+
+class Resistor(Part):   # Sub-Class
+    def __init__(self, value, tolerance=2):
         super().__init__(value, tolerance)
 
-    def __str__(self)->str:
+    def __str__(self):
         return f'Resistor: value={self.value}Ohm, tolerance={self.tolerance}%'
 
 
-class Capacitor(Part):
-    def __init__(self, value:int, tolerance:int=5)->None:
+class Capacitor(Part):  # Sub-Class
+    def __init__(self, value, tolerance=5):
         super().__init__(value, tolerance)
 
-    def __str__(self)->str:
+    def __str__(self):
         return f'Capacitor: value={self.value}uF, tolerance={self.tolerance}%'
 
 
-# Use base type as parameter
+# Use base type as parameter (polymorphism)
 
-def print_part(part:Part):
+def print_part(part):
     print(f"Part: {part}")
 
 
@@ -70,4 +61,3 @@ if __name__ == '__main__':
 
     print_part(r1)  # r1 "is a " Part
     print_part(c1)  # c1 "is a " Part
-        

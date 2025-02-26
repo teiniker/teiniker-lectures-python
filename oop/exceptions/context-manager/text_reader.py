@@ -1,6 +1,6 @@
 
 class TextReader:
-    def __init__(self, filename:str)->None:
+    def __init__(self, filename):
         self.filename = filename
         self.file = None
 

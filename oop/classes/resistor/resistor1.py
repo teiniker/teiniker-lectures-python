@@ -1,11 +1,11 @@
 
 class Resistor():
     """Class implementation at its simplest."""
-    def __init__(self, value:int, tolerance:int) -> None:
+    def __init__(self, value, tolerance):
         self.value = value
         self.tolerance = tolerance
 
-    def add(self, other)->"Resistor":
+    def add(self, other):
         value = self.value + other.value
         if self.tolerance > other.tolerance:
             tolerance = self.tolerance

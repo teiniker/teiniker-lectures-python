@@ -65,8 +65,8 @@ We can **change an attribute’s value** in three ways:
 
 
 ### Methods
-Instance methods are functions that are defined inside a class and can only be called from an instance 
-of that class. 
+Instance methods are functions that are defined inside a class and 
+can only be called from an instance of that class. 
 An instance method’s first parameter is always `self`.
 
 
@@ -282,4 +282,4 @@ Python will disregard the parent class method and only pay attention to the meth
 * [Python __eq__](https://www.pythontutorial.net/python-oop/python-__eq__)
 
 
-*Egon Teiniker, 2020-2022, GPL v3.0*
+*Egon Teiniker, 2020-2025, GPL v3.0*

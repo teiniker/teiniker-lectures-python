@@ -1,23 +1,23 @@
 class Resistor():
-    def __init__(self, value:int, tolerance:int=2)->None:
+    def __init__(self, value, tolerance=2):
         self.tolerance = tolerance
         self.value= value
 
-    def __str__(self)->str:
+    def __str__(self):
         return f'Resistor: value={self.value}Ohm, tolerance={self.tolerance}%'
 
 
 class Capacitor():
-    def __init__(self, value:int, tolerance:int=5)->None:
+    def __init__(self, value, tolerance=5):
         self.tolerance = tolerance
         self.value= value
 
-    def __str__(self)->str:
+    def __str__(self):
         return f'Capacitor: value={self.value}uF, tolerance={self.tolerance}%'
 
 
 # Duck typing (whatever part is - use str() to print it)
-def print_part(part)->None:
+def print_part(part):
     print(f"Part: {part}")
 
 

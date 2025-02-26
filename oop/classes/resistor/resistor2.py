@@ -2,17 +2,17 @@
 class Resistor():
     """Class using operator overloading and magic methods."""
 
-    def __init__(self, value:int, tolerance:int=2) -> None:
+    def __init__(self, value, tolerance=2):
         self.value = value
         self.tolerance = tolerance
 
-    def __repr__(self) -> str:
+    def __repr__(self):
         return f'Resistor({self.value}, {self.tolerance})'
 
-    def __str__(self) -> str:
+    def __str__(self):
         return f'Resistor: value={self.value}, tolerance={self.tolerance}'
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other):
         if self.value == other.value and self.tolerance == other.tolerance:
             return True
         else:
