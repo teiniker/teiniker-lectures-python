@@ -10,8 +10,8 @@ A) Extract Base Class
 Write an abstract base class (ABC) named "Instrument" which implements the common 
 attributes and a coresponding constructor.
 Inherit "Voltmeter" and "Amperemeter" from "Instrument".
-Define the "measured_value()" method as abstract method, so the each subclass has to 
-implement this method.
+Define the "measured_value()" method as abstract method, so the each subclass has 
+to implement this method.
 
 B) Use Polymorphism 
 In the function signature "def is_in_range(instr, value:float)->bool:" add a 

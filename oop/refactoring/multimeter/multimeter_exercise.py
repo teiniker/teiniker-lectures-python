@@ -1,34 +1,34 @@
 import math
 
 class Voltmeter():
-    def __init__(self, name:str, range_min:float, range_max:float)->None:
+    def __init__(self, name, range_min, range_max):
         self.name = name
         self.unit = "[V]"
         self.range_min = range_min
         self.range_max = range_max
 
-    def __str__(self)->str:
+    def __str__(self):
         return f"Voltmeter ({self.name}): range from {self.range_min} to {self.range_max} {self.unit}"
 
-    def measured_value(self)->float:
+    def measured_value(self):
         return 7.11 # simulate a measured value
 
 
 class Amperemeter():
-    def __init__(self, name:str, range_min:float, range_max:float)->None:
+    def __init__(self, name, range_min, range_max):
         self.name = name
         self.unit = "[A]"
         self.range_min = range_min
         self.range_max = range_max
 
-    def __str__(self)->str:
+    def __str__(self):
         return f"Amperemeter ({self.name}): range from {self.range_min} to {self.range_max} {self.unit}"
 
-    def measured_value(self)->float:
+    def measured_value(self):
         return 0.02 # simulate a measured value
 
 
-def is_in_range(instr, value:float)->bool:
+def is_in_range(instr, value):
     if value >= instr.range_min and value <= instr.range_max:
         return True
     else:

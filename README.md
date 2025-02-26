@@ -63,7 +63,13 @@ Each of these short videos repeats a specific language construct of the Python p
     * [YouTube (Corey Schafer): Special (Magic/Dunder) Methods](https://youtu.be/3ohzBxoFHAY)
     * [YouTube (Corey Schafer): Class Variables](https://youtu.be/BJ-VvGyQxho)
     * [YouTube (Corey Schafer): Classmethods and Staticmethods](https://youtu.be/rq8cL2XMM5M)
-    * [YouTube (Corey Schafer): Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
+    
+    * **Associations**
+      * [Introduction](oop/associations/)
+
+    * **Inheritance**
+      * [Introduction](oop/inheritance/)
+      * [YouTube (Corey Schafer): Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
 
     * **Enumerations**
     * [Introduction](oop/enumerations/)

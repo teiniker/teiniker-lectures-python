@@ -2,40 +2,40 @@ from abc import ABC, abstractmethod
 import math
 
 class Instrument(ABC):
-    def __init__(self, name:str, unit:str, range_min:float, range_max:float)->None:
+    def __init__(self, name, unit, range_min, range_max):
         self.name = name
         self.unit = unit
         self.range_min = range_min
         self.range_max = range_max
 
     @abstractmethod
-    def measured_value(self)->float:
+    def measured_value(self):
         pass
 
 
 class Voltmeter(Instrument):
-    def __init__(self, name:str, range_min:float, range_max:float)->None:
+    def __init__(self, name, range_min, range_max):
         super().__init__(name, "[V]", range_min, range_max)
 
-    def __str__(self)->str:
+    def __str__(self):
         return f"Voltmeter ({self.name}): range from {self.range_min} to {self.range_max} {self.unit}"
 
-    def measured_value(self)->float:
+    def measured_value(self):
         return 7.11 # simulate a measured value
 
 
 class Amperemeter(Instrument):
-    def __init__(self, name:str, range_min:float, range_max:float)->None:
+    def __init__(self, name, range_min, range_max):
         super().__init__(name, "[A]", range_min, range_max)
 
-    def __str__(self)->str:
+    def __str__(self):
         return f"Amperemeter ({self.name}): range from {self.range_min} to {self.range_max} {self.unit}"
 
-    def measured_value(self)->float:
+    def measured_value(self):
         return 0.02 # simulate a measured value
 
 
-def is_in_range(instr:Instrument, value:float)->bool:
+def is_in_range(instr, value):
     if value >= instr.range_min and value <= instr.range_max:
         return True
     else:
@@ -56,4 +56,3 @@ if __name__ == '__main__':
     assert "Amperemeter (Keysight): range from 0.0 to 0.1 [A]" == str(keysight)
     assert not is_in_range(keysight, -0.1)
     assert is_in_range(keysight, 0.1)
-
