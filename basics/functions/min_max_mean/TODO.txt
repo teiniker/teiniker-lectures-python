@@ -1,0 +1,24 @@
+Exercise: Loops, Functions - Min, Max, Mean Value
+-------------------------------------------------------------------------------
+
+Implement the following functions:
+
+A) min_value(lst)
+Calculate the minimum value of the given list.
+
+B) max_value(lst)
+Calculate the maximum value of the given list.
+
+C) mean_value(lst)
+Calculate the mean value of the given list.
+
+Remember, directly comparing floating point numbers using "==" can 
+be problematic due to precision issues inherent in floating point 
+arithmetic. 
+
+For many cases, especially in tests involving computed means, small 
+rounding errors might cause an equality check to fail unexpectedly.
+
+A more robust approach is to use a tolerance-based comparison. 
+Python’s math.isclose function (available in Python 3.5+) is well-suited 
+for this purpose. 
