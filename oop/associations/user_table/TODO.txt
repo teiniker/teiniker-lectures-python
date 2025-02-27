@@ -1,8 +1,8 @@
 Exercise: Classes and Associations
 -------------------------------------------------------------------------------
 
-Implement the classes User and UserTable which are related in the
-following way:
+Implement the classes "User" and "UserTable" which are related 
+in the following way:
     [UserTable] ---[*]-> [User]
  
 A) Class User 
