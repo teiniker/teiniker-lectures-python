@@ -1,7 +1,9 @@
 # Exceptions
 
-Python uses **special objects called exceptions to manage errors** that arise during a program’s execution. 
-Whenever an error occurs that makes Python unsure what to do next, it creates an exception object.
+Python uses **special objects called exceptions to manage errors** 
+that arise during a program’s execution. 
+Whenever an error occurs that makes Python unsure what to do next, 
+it creates an exception object.
 
 _Example_: Division by Zero
 ```
@@ -10,21 +12,30 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero
 ```
-Exceptions come in different types, and the type is printed as part of the message: the type in the example is `ZeroDivisionError`.
-The preceding part of the error message shows the context where the exception occurred, in the form of a **stack traceback**. In general it contains a stack traceback listing source lines; however, it will not display lines read from standard input.
+Exceptions come in different types, and the type is printed as part 
+of the message: the type in the example is `ZeroDivisionError`.
 
-If we write code that **handles the exception**, the program will continue running. 
+The preceding part of the error message shows the context where the 
+exception occurred, in the form of a **stack traceback**. In general 
+it contains a stack traceback listing source lines; however, it will 
+not display lines read from standard input.
+
+If we write code that **handles the exception**, the program will 
+continue running. 
 
 Exceptions are handled with `try ... except`blocks. 
-A `try ... except` block asks Python to do something, but it also tells Python what to do if an exception is raised.
+A `try ... except` block asks Python to do something, but it also tells 
+Python what to do if an exception is raised.
 
 
 ## Raising an Exception
 
 We can use `raise` to throw an exception if a condition occurs. 
 The sole argument to `raise` indicates the exception to be raised. 
-This must be either an **exception instance** or an **exception class** (a class that derives from Exception). 
-If an exception class is passed, it will be implicitly instantiated by calling its constructor.
+This must be either an **exception instance** or an **exception class** 
+(a class that derives from Exception). 
+If an exception class is passed, it will be implicitly instantiated 
+by calling its constructor.
 
 _Example_: Input validation
 ```Python
@@ -62,22 +73,24 @@ _Example_: Input validation
     Raised when a sequence subscript is out of range.
 
 * **TypeError** \
-    Raised when an operation or function is applied to an object of inappropriate type. The 
-    associated value is a string giving details about the type mismatch.
+    Raised when an operation or function is applied to an object of 
+    inappropriate type. The associated value is a string giving details 
+    about the type mismatch.
     
 * **ValueError** \
-    Raised when an operation or function receives an argument that has the **right type** but an 
-    **inappropriate value**, and the situation is not described by a more precise exception such 
-    as `IndexError`.
+    Raised when an operation or function receives an argument that has 
+    the **right type** but an **inappropriate value**, and the situation 
+    is not described by a more precise exception such as `IndexError`.
 
 * **FileNotFoundError** \
     Raised when a file or directory is requested but doesn’t exist.
         
 * **NotImplementedError** \
     This exception is derived from `RuntimeError`. 
-    In user defined base classes, abstract methods should raise this exception when they require 
-    derived classes to override the method, or while the class is being developed to indicate that 
-    the real implementation still needs to be added.    
+    In user defined base classes, abstract methods should raise this 
+    exception when they require derived classes to override the method, 
+    or while the class is being developed to indicate that the real 
+    implementation still needs to be added.    
 
 #### Exception Hierarchy
 The class hierarchy for **built-in exceptions** is:
@@ -149,14 +162,17 @@ BaseException                                   <=
 ```
 
 ### User Defined Exceptions
-Programs may name their own exceptions by creating a new exception class. 
-Exceptions should typically be derived from the `Exception` class, either directly or indirectly.
+Programs may name their own exceptions by creating a new exception 
+class. Exceptions should typically be derived from the `Exception` 
+class, either directly or indirectly.
 
-Most exceptions are defined with names that end in “`Error`”, similar to the naming of the standard exceptions.
+Most exceptions are defined with names that end in “`Error`”, 
+similar to the naming of the standard exceptions.
 
-Exception classes can be defined which do anything any other class can do, but are usually kept simple, 
-often only offering a number of attributes that allow information about the error to be extracted by 
-handlers for the exception.
+Exception classes can be defined which do anything any other class 
+can do, but are usually kept simple, often only offering a number 
+of attributes that allow information about the error to be extracted 
+by handlers for the exception.
 
 _Example_: User defined exception without attributes
 ```Python
@@ -164,9 +180,10 @@ class DataAccessError(Exception):
     pass
 ```
 
-When creating a module that can raise several distinct errors, a common practice is to create a **base 
-class for exceptions defined by that module**, and subclass that to create specific exception classes for 
-different error conditions.
+When creating a module that can raise several distinct errors, a 
+common practice is to create a **base class for exceptions defined 
+by that module**, and subclass that to create specific exception 
+classes for different error conditions.
 
 
 ## Handling Exceptions
@@ -179,30 +196,40 @@ It is possible to write programs that handle selected exceptions.
     except ValueError as e: 
         print(f"Resistor object can't be created: {e}")  
 ```
+
 The `try` statement works as follows.
-* First, the `try` clause (the statement(s) between the `try` and `except` keywords) is executed.
-* If no exception occurs, the `except` clause is skipped and execution of the `try` statement is finished.
-* If an exception occurs during execution of the `try` clause, the rest of the clause is skipped. 
-    Then if its type matches the exception named after the `except` keyword, the `except` clause is executed, 
-    and then execution continues after the try statement.
-* If an exception occurs which does not match the exception named in the `except` clause, it is passed on 
-    to outer `try` statements; if no handler is found, it is an unhandled exception and execution stops 
-    with a message.
+* First, the `try` clause (the statement(s) between the `try` and 
+    `except` keywords) is executed.
+* If no exception occurs, the `except` clause is skipped and execution 
+    of the `try` statement is finished.
+* If an exception occurs during execution of the `try` clause, 
+    the rest of the clause is skipped. 
+    Then if its type matches the exception named after the `except` 
+    keyword, the `except` clause is executed, and then execution 
+    continues after the try statement.
+* If an exception occurs which does not match the exception named 
+    in the `except` clause, it is passed on to outer `try` statements; 
+    if no handler is found, it is an unhandled exception and execution 
+    stops with a message.
 
-Exception handlers don’t just handle exceptions if they occur immediately in the try clause, but also if they 
-occur **inside functions that are called** (even indirectly) in the `try` clause.
+Exception handlers don’t just handle exceptions if they occur immediately 
+in the try clause, but also if they occur **inside functions that are called** 
+(even indirectly) in the `try` clause.
 
-A `try` statement may have **more than one except clause**, to specify handlers for different exceptions. 
-At most one handler will be executed.
+A `try` statement may have **more than one except clause**, to specify 
+handlers for different exceptions. At most one handler will be executed.
 
 An `except` clause may name **multiple exceptions** as a parenthesized tuple: 
 `except (RuntimeError, TypeError, NameError):`
 
-The last `except` clause may omit the exception name(s), to serve as a wildcard: `except:` 
+The last `except` clause may omit the exception name(s), to serve as a 
+    wildcard: `except:` 
 
 ### The `else` Block
-The `try ... except` statement has an optional `else` clause, which, when present, must follow all except clauses. 
-It is useful for **code that must be executed if the `try` clause does not raise an exception**.
+The `try ... except` statement has an optional `else` clause, which, when 
+present, must follow all except clauses. 
+It is useful for **code that must be executed if the `try` clause does not 
+raise an exception**.
 
 _Example_: `try` with `else`
 ```Python
@@ -216,8 +243,9 @@ else:
 ```
 
 ### The `finally` Block
-The `try` statement has another optional clause which is intended to define **clean-up actions** that 
-**must be executed under all circumstances**. 
+The `try` statement has another optional clause which is intended 
+to define **clean-up actions** that **must be executed under all 
+circumstances**. 
 
 _Example_: `try` with `finally`
 ```Python
@@ -229,12 +257,15 @@ except ValueError as e:
 finally:    
     print("Do some clean-up.")    
 ```
-If a `finally` clause is present, the `finally` clause will execute as the last task before the `try` statement completes. 
-The `finally` clause runs whether or not the `try` statement produces an exception.
+
+If a `finally` clause is present, the `finally` clause will execute 
+as the last task before the `try` statement completes. 
+The `finally` clause runs whether or not the `try` statement produces 
+an exception.
 
 ### Predefines Clean-up Actions
-The `with` statement allows objects like files to be used in a way that ensures they are always cleaned up promptly 
-and correctly.
+The `with` statement allows objects like files to be used in a way 
+that ensures they are always cleaned up promptly and correctly.
 
 `Example`: Open a file
 ```Python
@@ -249,12 +280,13 @@ and correctly.
    except FileNotFoundError:
        raise DataAccessError('File not found: ' + self.filename)
 ```
-After the statement is executed, the file `f` is always closed, even if a problem was encountered while 
-processing the lines.
+
+After the statement is executed, the file `f` is always closed, even 
+if a problem was encountered while processing the lines.
 
 ### Exception Chaining 
-The `raise` statement allows an optional `from` which enables chaining exceptions.
-This can be useful when you are **transforming exceptions**
+The `raise` statement allows an optional `from` which enables chaining 
+exceptions. This can be useful when you are **transforming exceptions**
 
 _Example_: Exception chaining
 ```Python
@@ -270,10 +302,13 @@ _Example_: Exception chaining
          except FileNotFoundError as ex:
              raise DataAccessError(f'File not found: {self.filename}') from ex
 ```
-Exception chaining happens **automatically** when an exception is raised inside an `except` or `finally` section. 
 
-_Example_: `FileNotFound` exception transformed into a `DataAccessError` exception 
-(it also works without the `from` keyword - automatic exception chaining).
+Exception chaining happens **automatically** when an exception is raised 
+inside an `except` or `finally` section. 
+
+_Example_: `FileNotFound` exception transformed into a `DataAccessError` 
+exception (it also works without the `from` keyword - automatic exception 
+chaining).
 ```
 File "file_access.py", line 12, in read_data
     with open(self.filename, 'r') as file:
@@ -314,4 +349,4 @@ __main__.DataAccessError: File not found: datx.csv
 * [Python Exceptions: An Introduction](https://realpython.com/python-exceptions/)
 
 
-*Egon Teiniker, 2020-2023, GPL v3.0*
+*Egon Teiniker, 2020-2025, GPL v3.0*
