@@ -36,7 +36,7 @@ class Amperemeter(Instrument):
 
 
 def is_in_range(instr, value):
-    if value >= instr.range_min and value <= instr.range_max:
+    if value >= instr.range_min and value <= instr.range_max: 
         return True
     else:
         return False
