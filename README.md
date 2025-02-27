@@ -32,9 +32,11 @@ Each of these short videos repeats a specific language construct of the Python p
     * [YouTube (Corey Schafer): String Formatting - Advanced Operations for Dicts, Lists, Numbers, and Dates](https://youtu.be/vTX3IwquFkc)
 
   * **Conditional Statements**
+    * [Introduction](basics/conditionals/)
     * [YouTube (Corey Schafer): Conditionals and Booleans - If, Else, and Elif Statements](https://youtu.be/DZwmZ8Usvnk)
 
   * **Loops**
+    * [Introduction](basics/loops/)
     * [YouTube (Corey Schafer): Loops and Iterations - For/While Loops](https://youtu.be/6iF8Xb7Z3wQ)
     * [YouTube: Loop like a native: while, for, iterators, generators](https://youtu.be/EnSu9hHGq5o)
 
@@ -117,4 +119,4 @@ Each of these short videos repeats a specific language construct of the Python p
 * Slatkin Brett. **Effective Python**. Pearson Education, 2nd Edition, 2020
 * Dusty Phillips. **Python 3 Object-Oriented Programming: Build robust and maintainable software with object-oriented design patterns in Python 3.8**. Packt Publishing, 3rd Edition 2018
 
-*Egon Teiniker, 2020-2023, GPL v3.0*
+*Egon Teiniker, 2020-2025, GPL v3.0*
