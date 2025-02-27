@@ -8,6 +8,7 @@ print(type(squares))
 # Empty tuples are constructed by an empty pair of parentheses
 empty = ()
 assert empty == ()
+assert not empty
 
 # A tuple with one item is constructed by following a value with a comma
 singleton = 'hello',    # <-- note trailing comma
@@ -47,4 +48,3 @@ a = ('a', 'b', 'c')
 n = (1, 2, 3)
 nested = (a, n)
 assert (('a', 'b', 'c'), (1, 2, 3)) == nested
-
