@@ -28,6 +28,15 @@ else:
     print("You are a minor.")
 ```
 
+The if statement checks if the variable age is greater than or equal 
+to 18:
+* If the condition is `True`, it executes the indented code under it:
+   `print("You are an adult.")`
+* If the condition in the if statement is `False` (meaning age is less 
+    than 18), the code inside the else block runs:
+   `print("You are a minor.")`
+
+
 _Example:_ if-elif-else statement
 
 ```Python
@@ -41,6 +50,10 @@ else:
     print("Zero")
 ```
 
+If the first condition `(num > 0)` is `False`, it checks if `num` is 
+less than zero: `elif num < 0:` (**else-if statement**).
+
+
 _Example:_ Using if-else with Logical Operators
 
 ```Python
@@ -53,6 +66,10 @@ else:
     print("You cannot enter.")
 ```
 
+The condition uses the **and** operator, meaning both conditions must 
+be `True` for the code inside if to execute.
+
+
 _Example:_ Using if-else with in Operator
 
 ```Python
@@ -63,6 +80,13 @@ if "banana" in fruits:
 else:
     print("Banana is not available.")
 ```
+
+The **in** operator checks whether "banana" is present in the 
+variable fruits.
+
+It assumes that fruits is a collection, such as a `list`, 
+`tuple`, or `set`.
+
 
 ## match-case
 
@@ -107,6 +131,19 @@ print(get_day_name(3))  # Output: Wednesday
 print(get_day_name(10)) # Output: Invalid day            
 ```
 
+* The function `def get_day_name(day)` takes an integer input 
+    `day` representing a day of the week.
+
+* The `match` statement checks the value of day against multiple    
+    case conditions.
+
+* Case-by-Case Checking:
+    - If `day == 1`, it returns `"Monday"`.
+    - If `day == 2`, it returns `"Tuesday"`, and so on.
+
+* The underscore `_` acts as a **default case** (like else in an 
+    `if-else` statement).
+
 _Example:_ Matching Multiple Cases
     
 ```Python
@@ -120,6 +157,10 @@ def check_vowel(letter):
 print(check_vowel('e'))  # Output: It's a vowel.
 print(check_vowel('b'))  # Output: It's a consonant.
 ```
+
+Multiple Values in One Case `case 'a' | 'e' | 'i' | 'o' | 'u':`
+The `|` (pipe symbol) acts as an **OR operator**.
+
 
 _Example:_ Using case _ if for Conditional Matching
 
@@ -139,6 +180,16 @@ print(number_type(10))   # Output: Positive number
 print(number_type(-5))   # Output: Negative number
 print(number_type(0))    # Output: Zero
 ```
+
+* `case x if x > 0:` If num is greater than 0, it matches this case 
+
+* `case x if x < 0:` If num is less than 0, it matches this case 
+
+* `case 0:` If num is exactly 0, it matches this case.
+
+* `case _:` If num does not match any of the above cases (e.g., if 
+    it's `None`, a string, or another unexpected value)
+
 
 _Example:_ Matching Data Structures (Tuples)
 
@@ -160,6 +211,8 @@ print(process_coordinates((0, 0)))  # Output: Origin
 print(process_coordinates((5, 0)))  # Output: Point is on the X-axis at x=5
 print(process_coordinates((3, 4)))  # Output: Point is at (3, 4)
 ```
+
+Here, each case is defined by a **tuple pattern**.
 
 
 ## References
