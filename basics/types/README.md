@@ -382,6 +382,61 @@ Placing a comma-separated list of `key:value` pairs within the braces adds initi
 `key:value` pairs to the dictionary; this is also the way dictionaries are written 
 on output.
 
+_Examples:_ Creating a dictionary
+```Python
+person = {
+    "name": "Homer",
+    "age": 25,
+    "city": "New York"
+}
+assert person == {'name': 'Homer', 'age': 25, 'city': 'New York'}
+```
+
+
+_Examples:_ Accessing elements
+```Python
+assert "Homer" == person["name"]
+assert 25 == person["age"]
+assert "New York" == person["city"]
+```
+
+_Examples:_ Adding elements
+```Python
+person["email"] = "homer@powerplant.com"
+assert "homer@powerplant.com" == person["email"]
+```
+
+_Examples:_ Removing elements
+```Python
+del person["email"]
+assert "email" not in person
+```
+
+_Examples:_ Length of a dictionary
+```Python
+assert 3 == len(person)
+```
+
+_Examples:_ Retrive keys, values, and items
+```Python
+assert sorted(person.keys()) == ['age', 'city', 'name']
+print(person.values())
+assert sorted(person.items()) == [('age', 25), ('city', 'New York'), ('name', 'Homer')]
+```
+
+_Examples:_ Iterate over a dictionary
+```Python
+for key, value in person.items():
+    print(key, value)
+```
+
+_Examples:_ Loop over two or more sequences at the same time
+```Python
+questions = ['name', 'quest', 'favorite color']
+answers = ['lancelot', 'the holy grail', 'blue']
+for q, a in zip(questions, answers):
+    print(f'What is your {q}? It is {a}.')
+```
 
 
 ## References
