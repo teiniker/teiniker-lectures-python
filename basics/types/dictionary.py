@@ -2,7 +2,7 @@
 
 # A dictionary is an unordered collection of key-value pairs.
 
-# Create a dictionary
+# Creating a dictionary
 person = {
     "name": "Homer",
     "age": 25,
