@@ -23,6 +23,7 @@ Each of these short videos repeats a specific language construct of the Python p
 
   * **Data Types and Data Structures**
     * [Introduction](basics/types/)
+
     * [YouTube (Corey Schafer): Integers and Floats - Working with Numeric Data](https://youtu.be/khKv-8q7YmY)
     * [YouTube (Corey Schafer): Strings - Working with Textual Data](https://youtu.be/k9TUPpGqYTo)
     * [YouTube (Corey Schafer): F-Strings - How to Use Them and Advanced String Formatting](https://youtu.be/nghuHvKLhJA)
@@ -33,18 +34,22 @@ Each of these short videos repeats a specific language construct of the Python p
 
   * **Conditional Statements**
     * [Introduction](basics/conditionals/)
+    
     * [YouTube (Corey Schafer): Conditionals and Booleans - If, Else, and Elif Statements](https://youtu.be/DZwmZ8Usvnk)
 
   * **Loops**
     * [Introduction](basics/loops/)
+    
     * [YouTube (Corey Schafer): Loops and Iterations - For/While Loops](https://youtu.be/6iF8Xb7Z3wQ)
     * [YouTube: Loop like a native: while, for, iterators, generators](https://youtu.be/EnSu9hHGq5o)
 
   * **Functions**
     * [Introduction](basics/functions)
+    
     * [YouTube (Corey Schafer): Functions](https://youtu.be/9Os0o3wzS_I)
 
   * **Modules**
+ 
     * [Introduction](basics/modules/)
     * [YouTube (Corey Schafer): Import Modules and Exploring The Standard Library](https://youtu.be/CqvZ3vGoGs0)
     * [YouTube (Corey Schafer): if `__name__ == '__main__'`](https://youtu.be/sugvnHA7ElY)

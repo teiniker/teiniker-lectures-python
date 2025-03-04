@@ -1,8 +1,11 @@
 # Tuple objects
 
 # Tuples can be defined with or without surrounding parentheses
+numbers = 1, 2, 3, 4, 5
+assert numbers == (1, 2, 3, 4, 5)  # == compares element by element
+
 squares = (1, 4, 9, 16, 25)
-assert squares == (1, 4, 9, 16, 25)     # == compares element by element
+assert squares == (1, 4, 9, 16, 25)    
 print(type(squares))
 
 # Empty tuples are constructed by an empty pair of parentheses

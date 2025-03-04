@@ -143,6 +143,38 @@ assert "13" == str(13)
 assert "3.14" == str(3.14)
 ```
 
+A format string is a way to insert variables into strings in Python dynamically. 
+
+**Formatted String Literals** a.k.a. **f-strings** are the most modern and 
+recommended way to format strings in Python.
+
+_Example:_ f-string
+```Python
+name = "David"
+age = 28
+print(f"My name is {name} and I am {age} years old.")
+```
+
+_Example:_ Expressions inside f-strings
+```Python
+a = 10
+b = 5
+print(f"The sum of {a} and {b} is {a + b}.")
+```
+
+_Example:_ Formatting numbers
+```Python
+pi = 3.1415926535
+print(f"Pi rounded to 2 decimal places: {pi:.2f}")    
+```
+
+_Example:_ Adding padding and alignment
+```Python
+print(f"|{'Left':<10}|{'Center':^10}|{'Right':>10}|")
+# Output: |Left      |  Center  |     Right|
+```
+
+
 ## Lists
 
 A list can be written as a **sequence of comma-separated values (items) 
@@ -225,6 +257,14 @@ A tuple consists of a number of values separated by commas.
 Tuples are **immutable**, and usually contain a heterogeneous 
 sequence of elements.
 
+_Example:_ Tuples can be defined **with or without surrounding parentheses**.
+```Python
+numbers = 1, 2, 3, 4, 5
+assert numbers == (1, 2, 3, 4, 5)
+```
+
+Note that the **== operator** compares element by element.
+
 
 A special problem is the construction of tuples containing 
 0 or 1 items: the syntax has some extra quirks to accommodate 
@@ -232,6 +272,82 @@ these.
 **Empty tuples** are constructed by an empty pair of parentheses;
 a **tuple with one item** is constructed by following a value with 
 a comma (it is not sufficient to enclose a single value in parentheses).
+
+_Example:_ **Empty tuples** are constructed by an empty pair of parentheses 
+```Python
+numbers = ()
+assert numbers == ()
+assert not numbers
+```
+
+Note that `not numbers` can be used to check if a tuple is empty.
+
+
+_Example:_ Tuple with one item is constructed by a value with a comma
+```Python
+singleton = 'hello',    # Note trailing comma!!
+assert singleton == ('hello',)
+```
+
+_Example:_ Tuple unpacking
+```Python
+t = 1, 4, 9
+x, y, z = t
+assert 1 == x
+assert 4 == y
+assert 9 == z
+```
+
+_Example:_ Concatination
+```Python
+assert (1, 2, 3, 4, 5, 6, 7) == (1, 2, 3, 4) + (5, 6, 7)
+```
+
+_Example:_ Indexing
+```Python
+squares = (1, 4, 9, 16, 25)
+assert 1 == squares[0]
+assert 25 == squares[-1]
+```
+
+_Example:_ Slicing
+```Python
+squares = (1, 4, 9, 16, 25)
+assert (4,9) == squares[1:3]
+assert (1,4,9) == squares[:3]
+assert (16, 25) == squares[3:] 
+```
+
+_Example:_ Length of a tuple
+```Python
+squares = (1, 4, 9, 16, 25)
+assert len(squares) == 5
+```
+
+_Example:_ Nested tuples
+```Python
+a = ('a', 'b', 'c')
+n = (1, 2, 3)
+nested = (a, n)
+assert (('a', 'b', 'c'), (1, 2, 3)) == nested
+```
+
+## Dictionaries
+
+Dictionaries are sometimes found in other languages as “associative memories” 
+or “associative arrays”. Unlike sequences, which are indexed by a range of numbers, 
+**dictionaries are indexed by keys**, which can be any immutable type; strings 
+and numbers can always be keys. 
+
+It is best to think of a dictionary as a **set of key:value pairs**, with the 
+requirement that the keys are unique (within one dictionary). 
+
+A pair of braces creates an **empty dictionary**: `{}`. 
+
+Placing a comma-separated list of `key:value` pairs within the braces adds initial 
+`key:value` pairs to the dictionary; this is also the way dictionaries are written 
+on output.
+
 
 
 ## References
@@ -242,6 +358,6 @@ a comma (it is not sufficient to enclose a single value in parentheses).
 * [Python Tutorial: List](https://docs.python.org/3/tutorial/introduction.html#lists)
 
 * [Python Tutorial: Tuples](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)
-
+* [Python Tutorial: Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 
 *Egon Teiniker, 2020-2025, GPL v3.0*
