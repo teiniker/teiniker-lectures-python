@@ -332,6 +332,40 @@ nested = (a, n)
 assert (('a', 'b', 'c'), (1, 2, 3)) == nested
 ```
 
+# Sets 
+
+ A set is an **unordered collection with no duplicate elements**. 
+ 
+ Basic uses include membership testing and eliminating duplicate entries. 
+ Set objects also support mathematical operations like union, intersection, 
+ difference, and symmetric difference.
+
+_Example:_ Eliminate duplicates
+```Python
+basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+assert basket == {'apple', 'orange', 'pear', 'banana'}
+```
+
+_Example:_ To create an empty set we can use set(), not {};
+```Python
+empty_set = {}
+assert not empty_set
+```
+
+_Example:_ Fast membership testing 
+```Python
+assert 'orange' in basket
+assert 'crabgrass' not in basket```
+
+
+_Example:_ Iterate over a set
+```Python
+for fruit in ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']:
+    assert fruit in basket
+```
+
+
+
 ## Dictionaries
 
 Dictionaries are sometimes found in other languages as “associative memories” 
