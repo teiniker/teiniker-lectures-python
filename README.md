@@ -65,7 +65,7 @@ Each of these short videos repeats a specific language construct of the Python p
   ## Object-Oriented Programming
   
   * **Classes**
-    * [Introduction](oop/)
+    * [Introduction](oop/classes/)
     * [YouTube (Corey Schafer): Classes and Instances](https://youtu.be/ZDa-Z5JzLYM)
     * [YouTube (Corey Schafer): Property Decorators - Getters, Setters, and Deleters](https://youtu.be/jCzT9XFZ5bw)
     * [YouTube (Corey Schafer): Special (Magic/Dunder) Methods](https://youtu.be/3ohzBxoFHAY)
