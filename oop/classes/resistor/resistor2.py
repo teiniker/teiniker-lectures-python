@@ -6,13 +6,13 @@ class Resistor():
         self.value = value
         self.tolerance = tolerance
 
-    def __repr__(self):
+    def __repr__(self):         # repr() or print() 
         return f'Resistor({self.value}, {self.tolerance})'
 
-    def __str__(self):
+    def __str__(self):          # str() or print()
         return f'Resistor: value={self.value}, tolerance={self.tolerance}'
 
-    def __eq__(self, other):
+    def __eq__(self, other):    # == operator
         if self.value == other.value and self.tolerance == other.tolerance:
             return True
         else:

@@ -9,7 +9,7 @@ class User():
         return f"User: id={self.oid}, username='{self.username}'"
 
     def __eq__(self, other):
-        return self.oid == other.oid
+        return self.oid == other.oid and self.username == other.username
 
 
 class UserTable():

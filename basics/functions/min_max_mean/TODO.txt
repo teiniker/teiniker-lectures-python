@@ -1,4 +1,4 @@
-Exercise: Loops, Functions - Min, Max, Mean Value
+Exercise: Conditions, Loops, Functions - Min, Max, Mean Value
 -------------------------------------------------------------------------------
 
 Implement the following functions:
