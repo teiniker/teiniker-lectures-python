@@ -61,6 +61,10 @@ Each of these short videos repeats a specific language construct of the Python p
     * [Introduction](basics/virtual-environments/README.md)
     * [YouTube (Corey Schafer): VENV (Mac & Linux) - How to Use Virtual Environments with the Built-In venv Module](https://youtu.be/Kg1Yvry_Ydk?si=GDD5uxD9AyOJynIc)
 
+  * **Jupyter Notebook**
+    * [Introduction](basics/jupyter-notebook/)
+    * [YouTube (Corey Schafer): Jupyter Notebook Tutorial: Introduction, Setup, and Walkthrough](https://youtu.be/HW29067qVWk?si=JgCTPoVYdx1iv4Wb)
+
 
   ## Object-Oriented Programming
   
