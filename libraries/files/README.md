@@ -251,4 +251,5 @@ We can use the `indent` keyword argument to specify the indentation size for nes
 * [Working With JSON Data in Python](https://realpython.com/python-json/)
 * [The Python Standard Library: JSON Encoder and Decoder](https://docs.python.org/3/library/json.html)
 
+*Egon Teiniker, 2020-2025, GPL v3.0*
 
