@@ -4,12 +4,12 @@ The **DB Browser for SQLite** is a visual tool to create, design, and edit
 database files compatible with SQLite. It is a free and open-source tool 
 that runs on Linux, macOS, and Windows.
 
-![DB Browser](figures/DB-Browser.png)
-
-
 * **New Database** -> Save As -> `test.db`
 
 * **Table**: `user`
+
+  ![DB Browser - Create](figures/db-browser-create.png)
+
   * Columns: 
     - `id` (INTEGER) Primary Key
     - `username` (TEXT), 
@@ -156,5 +156,7 @@ $ sudo apt install sqlitebrowser
 
 * [SQLite Homepage](https://www.sqlite.org/)
 * [SQLite Documentation](https://www.sqlite.org/docs.html)
+
+* [DB Browser for SQLite](https://sqlitebrowser.org/)
 
 *Egon Teiniker, 2020-2025, GPL v3.0*
