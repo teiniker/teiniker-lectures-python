@@ -1,6 +1,6 @@
 import sqlite3
 
-DATABALE_NAME = 'testdb.db'
+DATABALE_NAME = 'test.db'
 
 def create_table():
     con = sqlite3.connect(DATABALE_NAME)
@@ -44,4 +44,4 @@ if __name__ == '__main__':
     create_table()
     select_users()
     select_users_starting_with("m%")
-    drop_table()
+    #drop_table()
