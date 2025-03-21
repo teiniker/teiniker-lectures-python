@@ -19,6 +19,8 @@ in the main Python distribution:
 The following list references numerous **videos** which are created by by engaged authors and freely accessible on YouTube.
 Each of these short videos repeats a specific language construct of the Python programming language.
 
+Blah
+
 ## Python Basics
 
   * **Data Types and Data Structures**
