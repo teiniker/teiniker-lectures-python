@@ -114,8 +114,10 @@ which is convenient and maps directly to system calls.
 
 ## References
 
-* [Python Standard Library: Low-level networking interface](https://docs.python.org/3/library/socket.html)
+* [YouTube (Real Python): Creating a Simple Socket Server and Client in Python](https://youtu.be/sUzM-vIC-s4?si=NZ8YA6E64phMob3Y)
 
 * [Real Python: Socket Programming in Python](https://realpython.com/python-sockets/)
+* [Python Standard Library: Low-level networking interface](https://docs.python.org/3/library/socket.html)
+
 
 *Egon Teiniker, 2020-2025, GPL v3.0*
