@@ -1,0 +1,14 @@
+Exercise: Remote Logger 
+-------------------------------------------------------------------------------
+
+A remote logger should be implemented which receives strings via a socket 
+connection and writes them to a file. 
+
+A) logger.py
+   Extend the logger.py file to implement a remote logger. The logger should
+    listen on a socket connection and receive strings. The received strings
+    should be written to a file.  
+    After each request the server responses with "OK" to the client and 
+    closes the connection.
+
+Tip: USe the given log_message() function to write the messages to the file.    
