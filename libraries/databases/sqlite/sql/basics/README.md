@@ -417,11 +417,6 @@ SELECT output_list FROM input_table WHERE row_filter;
     is applied to each row. Those rows that evaluate to true will 
     be part of the result, while the other rows will be filtered out.
 
-_Example:_ Get 
-
-```sql
-```
-
 
 ## Transaction Control Language
 

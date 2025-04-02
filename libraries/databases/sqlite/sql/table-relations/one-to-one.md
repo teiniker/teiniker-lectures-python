@@ -1,4 +1,6 @@
-# Examples: One to One Relationship
+# Examples: One-to-One Relationship
+
+## Setup Database Tables 
 
 ```sql
 PRAGMA foreign_keys = ON;
@@ -132,6 +134,8 @@ sqlite> select * from mails;
 +----+---------+--------------------------------------------+
 ```
 
+### INNER JOIN 
+
 ```sql
 -- Get all users who do have email addresses
 sqlite> SELECT users.username, users.password, mails.address FROM users JOIN mails ON users.id = mails.user_id;
@@ -163,8 +167,33 @@ sqlite> SELECT users.username, users.password, mails.address FROM users JOIN mai
 | selma    | Yh6KpRz8@qJw | selma.bouvier@dmv.gov                      |
 +----------+--------------+--------------------------------------------+
 ```
-The query uses a JOIN, which by default is an INNER JOIN. 
 
+```sql
+-- Count how many users have email addresses
+sqlite> SELECT COUNT(*) FROM users JOIN mails ON users.id = mails.user_id;
++----------+
+| COUNT(*) |
++----------+
+| 23       |
++----------+
+```
+
+```sql
+-- Find users whose email contains 'simpson'
+sqlite> SELECT users.username, mails.address FROM users JOIN mails ON users.id = mails.user_id WHERE mails.address LIKE '%simpson%';
++----------+--------------------------------+
+| username |            address             |
++----------+--------------------------------+
+| homer    | homer.simpson@springfield.com  |
+| marge    | marge.simpson@springfield.com  |
+| bart     | bart.simpson@springfield.com   |
+| lisa     | lisa.simpson@springfield.com   |
+| maggie   | maggie.simpson@springfield.com |
++----------+--------------------------------+
+```
+
+
+### LEFT JOIN 
 
 ```sql
 -- Get all users and their email addresses (including users without emails)
@@ -214,16 +243,6 @@ sqlite> SELECT users.username FROM users LEFT JOIN mails ON users.id = mails.use
 ```
 
 ```sql
--- Count how many users have email addresses
-sqlite> SELECT COUNT(*) FROM users JOIN mails ON users.id = mails.user_id;
-+----------+
-| COUNT(*) |
-+----------+
-| 23       |
-+----------+
-```
-
-```sql
 -- Count how many users do NOT have email addresses
 sqlite> SELECT COUNT(*) FROM users LEFT JOIN mails ON users.id = mails.user_id WHERE mails.id IS NULL;
 +----------+
@@ -233,19 +252,8 @@ sqlite> SELECT COUNT(*) FROM users LEFT JOIN mails ON users.id = mails.user_id W
 +----------+
 ```
 
-```sql
--- Find users whose email contains 'simpson'
-sqlite> SELECT users.username, mails.address FROM users JOIN mails ON users.id = mails.user_id WHERE mails.address LIKE '%simpson%';
-+----------+--------------------------------+
-| username |            address             |
-+----------+--------------------------------+
-| homer    | homer.simpson@springfield.com  |
-| marge    | marge.simpson@springfield.com  |
-| bart     | bart.simpson@springfield.com   |
-| lisa     | lisa.simpson@springfield.com   |
-| maggie   | maggie.simpson@springfield.com |
-+----------+--------------------------------+
-```
+
+## Update Data
 
 ```sql
 -- Change a user’s email address

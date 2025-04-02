@@ -30,7 +30,8 @@ Querying Relationships: JOINs let you query related tables:
     excludes rows that do not match.
 
 * **LEFT JOIN (aka LEFT OUTER JOIN)**: Returns all rows from the left table (A) 
-    and the matched rows from the right table (B). If no match, B columns will be NULL.
+    and the matched rows from the right table (B). 
+    If no match, B columns will be NULL.
 
 * **RIGHT JOIN (aka RIGHT OUTER JOIN)** (not in SQLite): Returns all rows from 
     the right table (B) and matched rows from the left table (A). 
