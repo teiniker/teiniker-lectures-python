@@ -46,11 +46,11 @@ Querying Relationships: JOINs let you query related tables:
 
 | JOIN Type     | Returns                                                           | SQLite Support |
 |---------------|-------------------------------------------------------------------|----------------|
-| **INNER JOIN**| Only matching rows in both tables                                 | ✅ Supported   |
-| **LEFT JOIN** | All rows from left + matching rows from right, else NULLs         | ✅ Supported   |
-| **RIGHT JOIN**| All rows from right + matching rows from left, else NULLs         | ❌ Simulate    |
-| **FULL JOIN** | All rows from both tables, matching when possible, else NULLs     | ❌ Simulate    |
-| **CROSS JOIN**| Cartesian product of both tables (all combinations)               | ✅ Supported   |
+| **INNER JOIN**| Only matching rows in both tables                                 | Supported   |
+| **LEFT JOIN** | All rows from left + matching rows from right, else NULLs         | Supported   |
+| **RIGHT JOIN**| All rows from right + matching rows from left, else NULLs         | Simulate    |
+| **FULL JOIN** | All rows from both tables, matching when possible, else NULLs     | Simulate    |
+| **CROSS JOIN**| Cartesian product of both tables (all combinations)               | Supported   |
 
 
 ## One to One (1:1) Relationship
