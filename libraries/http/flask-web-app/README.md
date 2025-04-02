@@ -1,4 +1,4 @@
-# Web Application implemented in Flask 
+# Web Application
 
 Flask used tue Model-View-Controller (MVC) architectural pattern 
 to implement a web applikation.
