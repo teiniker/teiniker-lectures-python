@@ -37,8 +37,8 @@ INSERT INTO users (id, username, password) VALUES (23, 'selma', 'Yh6KpRz8@qJw');
 ## Query Data 
 
 ```sql
-sqlite> .mode table
-sqlite> select * from users;
+.mode table
+SELECT * FROM users;
 +----+----------+--------------+
 | id | username |   password   |
 +----+----------+--------------+
@@ -69,7 +69,7 @@ sqlite> select * from users;
 ```
 
 ```sql
-sqlite> SELECT username FROM users WHERE username LIKE 's%';
+SELECT username FROM users WHERE username LIKE 's%';
 +----------+
 | username |
 +----------+
@@ -80,7 +80,7 @@ sqlite> SELECT username FROM users WHERE username LIKE 's%';
 ```
 
 ```sql
-sqlite> SELECT username FROM users WHERE username LIKE '%e';
+SELECT username FROM users WHERE username LIKE '%e';
 +----------+
 | username |
 +----------+
@@ -93,7 +93,7 @@ sqlite> SELECT username FROM users WHERE username LIKE '%e';
 ```
 
 ```sql
-sqlite> SELECT username FROM users ORDER BY username DESC;
+SELECT username FROM users ORDER BY username DESC;
 +----------+
 | username |
 +----------+
@@ -124,7 +124,7 @@ sqlite> SELECT username FROM users ORDER BY username DESC;
 ```
 
 ```sql
-sqlite> SELECT username FROM users ORDER BY username LIMIT 10;
+SELECT username FROM users ORDER BY username LIMIT 10;
 +----------+
 | username |
 +----------+
@@ -142,7 +142,7 @@ sqlite> SELECT username FROM users ORDER BY username LIMIT 10;
 ```
 
 ```sql
-sqlite> SELECT * FROM users WHERE LENGTH(username) < 5;
+SELECT * FROM users WHERE LENGTH(username) < 5;
 +----+----------+--------------+
 | id | username |   password   |
 +----+----------+--------------+
@@ -158,7 +158,7 @@ sqlite> SELECT * FROM users WHERE LENGTH(username) < 5;
 ```
 
 ```sql
-sqlite> SELECT * FROM users WHERE username = 'otto' AND password = 'Zy5KwXc4$uYq';
+SELECT * FROM users WHERE username = 'otto' AND password = 'Zy5KwXc4$uYq';
 +----+----------+--------------+
 | id | username |   password   |
 +----+----------+--------------+
@@ -167,7 +167,7 @@ sqlite> SELECT * FROM users WHERE username = 'otto' AND password = 'Zy5KwXc4$uYq
 ```
 
 ```sql
-sqlite> SELECT * FROM users WHERE id >= 10 AND id <= 20;
+SELECT * FROM users WHERE id >= 10 AND id <= 20;
 +----+----------+--------------+
 | id | username |   password   |
 +----+----------+--------------+
@@ -188,8 +188,8 @@ sqlite> SELECT * FROM users WHERE id >= 10 AND id <= 20;
 ## Update Data 
 
 ```sql
-sqlite> UPDATE users SET password = 'burger' WHERE username = 'krusty';
-sqlite> SELECT * FROM users WHERE username = 'krusty';
+UPDATE users SET password = 'burger' WHERE username = 'krusty';
+SELECT * FROM users WHERE username = 'krusty';
 +----+----------+----------+
 | id | username | password |
 +----+----------+----------+
@@ -198,8 +198,8 @@ sqlite> SELECT * FROM users WHERE username = 'krusty';
 ```
 
 ```sql
-sqlite> UPDATE users SET password = 'duffbeer' WHERE id = 17;
-sqlite> SELECT * FROM users WHERE id = 17;
+UPDATE users SET password = 'duffbeer' WHERE id = 17;
+SELECT * FROM users WHERE id = 17;
 +----+----------+----------+
 | id | username | password |
 +----+----------+----------+
@@ -216,8 +216,8 @@ DELETE FROM users WHERE id = 11;
 ```
 
 ```sql
-sqlite> DROP TABLE users;
-sqlite> .tables
+DROP TABLE users;
+.tables
 ```
 
 *Egon Teiniker, 2020-2025, GPL v3.0*

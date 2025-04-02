@@ -73,7 +73,7 @@ INSERT INTO mails (id, user_id, address) VALUES (23, 23, 'selma.bouvier@dmv.gov'
 ## Query Data 
 
 ```sql
-sqlite> select * from users;
+SELECT * FROM users;
 +----+----------+--------------+
 | id | username |   password   |
 +----+----------+--------------+
@@ -104,7 +104,7 @@ sqlite> select * from users;
 ```
 
 ```sql
-sqlite> select * from mails;
+SELECT * FROM mails;
 +----+---------+--------------------------------------------+
 | id | user_id |                  address                   |
 +----+---------+--------------------------------------------+
@@ -138,7 +138,7 @@ sqlite> select * from mails;
 
 ```sql
 -- Get all users who do have email addresses
-sqlite> SELECT users.username, users.password, mails.address FROM users JOIN mails ON users.id = mails.user_id;
+SELECT users.username, users.password, mails.address FROM users JOIN mails ON users.id = mails.user_id;
 +----------+--------------+--------------------------------------------+
 | username |   password   |                  address                   |
 +----------+--------------+--------------------------------------------+
@@ -170,7 +170,7 @@ sqlite> SELECT users.username, users.password, mails.address FROM users JOIN mai
 
 ```sql
 -- Count how many users have email addresses
-sqlite> SELECT COUNT(*) FROM users JOIN mails ON users.id = mails.user_id;
+SELECT COUNT(*) FROM users JOIN mails ON users.id = mails.user_id;
 +----------+
 | COUNT(*) |
 +----------+
@@ -180,7 +180,7 @@ sqlite> SELECT COUNT(*) FROM users JOIN mails ON users.id = mails.user_id;
 
 ```sql
 -- Find users whose email contains 'simpson'
-sqlite> SELECT users.username, mails.address FROM users JOIN mails ON users.id = mails.user_id WHERE mails.address LIKE '%simpson%';
+SELECT users.username, mails.address FROM users JOIN mails ON users.id = mails.user_id WHERE mails.address LIKE '%simpson%';
 +----------+--------------------------------+
 | username |            address             |
 +----------+--------------------------------+
@@ -197,7 +197,7 @@ sqlite> SELECT users.username, mails.address FROM users JOIN mails ON users.id =
 
 ```sql
 -- Get all users and their email addresses (including users without emails)
-sqlite> SELECT users.username, users.password, mails.address FROM users LEFT JOIN mails ON users.id = mails.user_id;
+SELECT users.username, users.password, mails.address FROM users LEFT JOIN mails ON users.id = mails.user_id;
 +----------+--------------+--------------------------------------------+
 | username |   password   |                  address                   |
 +----------+--------------+--------------------------------------------+
@@ -233,7 +233,7 @@ matched records from the right table (mails).
 
 ```sql
 -- Find users who do NOT have an email address
-sqlite> SELECT users.username FROM users LEFT JOIN mails ON users.id = mails.user_id WHERE mails.id IS NULL;
+SELECT users.username FROM users LEFT JOIN mails ON users.id = mails.user_id WHERE mails.id IS NULL;
 +----------+
 | username |
 +----------+
@@ -244,7 +244,7 @@ sqlite> SELECT users.username FROM users LEFT JOIN mails ON users.id = mails.use
 
 ```sql
 -- Count how many users do NOT have email addresses
-sqlite> SELECT COUNT(*) FROM users LEFT JOIN mails ON users.id = mails.user_id WHERE mails.id IS NULL;
+SELECT COUNT(*) FROM users LEFT JOIN mails ON users.id = mails.user_id WHERE mails.id IS NULL;
 +----------+
 | COUNT(*) |
 +----------+
@@ -257,8 +257,8 @@ sqlite> SELECT COUNT(*) FROM users LEFT JOIN mails ON users.id = mails.user_id W
 
 ```sql
 -- Change a user’s email address
-sqlite> UPDATE mails SET address = 'homer.simpson@powerplant.com' WHERE user_id = (SELECT id FROM users WHERE username = 'homer');
-sqlite> SELECT users.username, mails.address FROM users JOIN mails ON users.id = mails.user_id WHERE users.username='homer';
+UPDATE mails SET address = 'homer.simpson@powerplant.com' WHERE user_id = (SELECT id FROM users WHERE username = 'homer');
+SELECT users.username, mails.address FROM users JOIN mails ON users.id = mails.user_id WHERE users.username='homer';
 +----------+------------------------------+
 | username |           address            |
 +----------+------------------------------+
@@ -270,25 +270,25 @@ sqlite> SELECT users.username, mails.address FROM users JOIN mails ON users.id =
 
 ```sql
 -- Delete user (ON DELETE CASCADE)
-sqlite> SELECT * FROM users WHERE id = 6;
+SELECT * FROM users WHERE id = 6;
 +----+----------+--------------+
 | id | username |   password   |
 +----+----------+--------------+
 | 6  | moe      | Bc8KpYi7!5Lo |
 +----+----------+--------------+
 
-sqlite> SELECT * FROM mails WHERE user_id = 6;
+SELECT * FROM mails WHERE user_id = 6;
 +----+---------+-----------------------------+
 | id | user_id |           address           |
 +----+---------+-----------------------------+
 | 6  | 6       | moe.szyslak@springfield.com |
 +----+---------+-----------------------------+
 
-sqlite> DELETE FROM users WHERE id = 6;
+DELETE FROM users WHERE id = 6;
 
-sqlite> SELECT * FROM users WHERE id = 6;
+SELECT * FROM users WHERE id = 6;
 
-sqlite> SELECT * FROM mails WHERE user_id = 6;
+SELECT * FROM mails WHERE user_id = 6;
 ```
 
 *Egon Teiniker, 2020-2025, GPL v3.0*
