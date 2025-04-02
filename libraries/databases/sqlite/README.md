@@ -28,22 +28,18 @@ SQLite is defined by the following features:
 * **Full-Featured**: SQLite supports most of the query language features found in the **SQL92 standard**. 
 
 
+* [Structured Query Language (SQL)](sql) 
+* [Pyton Programming](python/)
 
-## Structured Query Language 
-
-The Structured Query Language (SQL) is the main means of interacting with nearly all modern 
-relational database systems. 
-SQL provides commands to configure the tables, indexes, and other data structures within the 
-database. 
-SQL commands are also used to insert, update, and delete data records, as well as query those 
-records to look up specific data values.
-
-All interaction with a relational database is done through the SQL language. 
-This is true when **interactively typing commands** or when using the **programming API**.
+* [DB Browser](db-browser/README.md)
+* [VS Code](vscode/README.md)
+* [SQLite Utils](sqlite-utils/README.md)
 
 
 ## References
 * [SQLite: Tutorial](https://www.sqlitetutorial.net/)
 * [SQLite:In-Memory Databases](https://www.sqlite.org/inmemorydb.html)
+
+* Jay A. Kreibich. **Using SQLite: Small. Fast. Reliable. Choose Any Three.** O'Reilly Media, 2010. 
 
 *Egon Teiniker, 2020-2025, GPL v3.0*
