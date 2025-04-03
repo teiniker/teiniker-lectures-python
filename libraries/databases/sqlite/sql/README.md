@@ -1,15 +1,9 @@
 # Structured Query Language 
 
-The **Structured Query Language (SQL)** is the main means of interacting with 
-nearly all modern relational database systems. 
-SQL provides commands to configure the tables, indexes, and other data 
-structures within the database. 
-SQL commands are also used to insert, update, and delete data records, as 
-well as query those records to look up specific data values.
-
-All interaction with a relational database is done through the SQL language. 
-This is true when **interactively typing commands** or when using the 
-**programming API**.
+All interaction with a relational database is done through the 
+**Structured Query Language (SQL)** language. 
+This is true when **interactively typing commands** or when using 
+the **programming API**.
 
 * [SQL Basics](basics/README.md)
 * [SQL SELECT Statements](select/README.md)

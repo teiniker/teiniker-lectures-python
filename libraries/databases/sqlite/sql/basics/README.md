@@ -38,7 +38,7 @@ SQLite supports the following **unary prefix operators**:
     essentially a no-op, leaving a value with the same sign it previously had. 
     It does not make negative values positive.
 
-* **~**: As in the C language, the `~` operator performs a bit-wise inversion. 
+* **~**: As in the C language, the `~` operator performs a **bit-wise inversion**. 
     This operator is not part of the SQL standard.
 
 * **NOT**: The NOT operator **reverses a Boolean expression**.
@@ -46,25 +46,25 @@ SQLite supports the following **unary prefix operators**:
 
 There are also a number of **binary operators**:
 
-* **||**: String concatenation. This is the only string concatenation operator 
+* **||**: **String concatenation**. This is the only string concatenation operator 
     recognized by the SQL standard. 
 
-* **+ - * / %**: Standard arithmetic operators for addition, subtraction, 
+* **+ - * / %**: Standard **arithmetic operators** for addition, subtraction, 
     multiplication, division, and modulus (remainder).
 
-* **| & << >>**: The bitwise operators or, and, and shift-high/shift-low, as 
+* **| & << >>**: The **bitwise operators** or, and, and shift-high/shift-low, as 
     found in the C language. These operators are not part of the SQL standard.
 
-* **< <= => >**: Comparison test operators. Again, just as in the C language 
+* **< <= => >**: **Comparison test operators**. Again, just as in the C language 
     we have less-than, less-than or equal, greater-than or equal, and greater 
     than.
 
-* **= == != <>**: Equality test operators. Both `=` and `==` will test for 
+* **= == != <>**: **Equality test operators**. Both `=` and `==` will test for 
     equality, while both `!=` and `<>` test for inequality. 
 
-* **AND OR**: Logical operators.
+* **AND OR**: **Logical operators**.
 
-* **IN LIKE GLOB MATCH REGEXP**: These five keywords are logic operators,
+* **IN LIKE GLOB MATCH REGEXP**: These five keywords are **logic operators**,
     returning, true, false, or NULL state.
 
 
