@@ -2,7 +2,7 @@
 
 Socket programming in Python refers to the use of network sockets to enable communication 
 between two or more devices over a network. A socket is essentially an endpoint in a 
-two-way communication link between programs running on a network. It's used to send and 
+**two-way communication** link between programs running on a network. It's used to send and 
 receive data across a network, enabling applications to communicate over the internet or 
 local networks.
 
@@ -12,6 +12,10 @@ local networks.
 The most common type of socket applications are **client-server applications**, where one 
 side acts as the server and waits for connections from clients.
 
+
+![Socked communication](figures/Sockets-TCP.png)
+
+_Figure: TCP Socket Flow ( [Real Python: Socket Programming in Python](https://realpython.com/python-sockets/))_ 
 
 ## Server Side
 
@@ -110,6 +114,49 @@ which is convenient and maps directly to system calls.
 * `recv()`: Receives data.
 
 * `close()`: Closes the socket.
+
+
+
+## Client-Server Architectures 
+
+Socket communication allows **integration of applications written in 
+different programming languages** by providing a common, 
+language-independent protocol for exchanging data. 
+
+* **Standardized Protocol:**
+    - Socket programming typically uses standardized protocols like 
+    **TCP/IP** or **UDP/IP**, which define clear rules for data exchange. 
+    Because these protocols are universal, any programming language with 
+    socket support can communicate using them.
+
+* **Language-agnostic Data Representation:**
+    - Communication via sockets typically involves **sending raw bytes**. 
+    Applications agree on a common data format (e.g., plain text, JSON, 
+    XML, or binary protocols), which is independent of programming languages.
+
+* **Client-Server Architecture:**
+    - A common way to integrate applications is to establish a 
+    client-server model.
+    - One application acts as a **server** (e.g., Python script listening 
+    on a socket), while another acts as a **client** (e.g., Java or C++ 
+    application connecting to that socket).
+
+* **Interoperability:**
+    - Because sockets are supported in almost all modern programming languages, 
+    integration is highly flexible.
+
+    - Example languages with socket APIs include:
+    - **Python:** `socket` module
+    - **Java:** `java.net.Socket` and `ServerSocket`
+    - **C/C++:** POSIX sockets (`sys/socket.h`)
+    - **JavaScript (Node.js):** `net` module
+    - **C#:** `System.Net.Sockets`
+
+* **Use-Cases:**
+    - Cross-platform applications
+    - Microservices and distributed systems
+    - Integration of legacy systems with modern applications
+    - Data exchanges between heterogeneous systems
 
 
 ## References
