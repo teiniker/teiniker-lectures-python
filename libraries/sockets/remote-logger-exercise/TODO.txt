@@ -11,4 +11,4 @@ A) logger.py
     After each request the server responses with "OK" to the client and 
     closes the connection.
 
-Tip: USe the given log_message() function to write the messages to the file.    
+Tip: Use the given log_message() function to write the messages to the file.    
