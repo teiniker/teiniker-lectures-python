@@ -37,6 +37,19 @@ applications. It organizes code into three interconnected components:
     _Example_: Flask routes handlers that process requests and return responses.
 
 
+## Setup 
+
+We start the web application from the command line:
+```
+$ python3 app.py
+```
+
+Using a Browser, we can access the web page at:
+```
+http://localhost:8080/
+```
+
+
 ## Flask Implementation 
 
 The following example demonstrates how to implement the MVC pattern in a Flask application:
