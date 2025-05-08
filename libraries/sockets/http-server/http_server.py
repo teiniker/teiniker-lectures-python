@@ -15,7 +15,7 @@ def read_html(file_path):
 # Create socket
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.bind((HOST, PORT))
-server_socket.listen(1)
+server_socket.listen(10)
 
 print(f"HTTP Server running on http://{HOST}:{PORT}/")
 

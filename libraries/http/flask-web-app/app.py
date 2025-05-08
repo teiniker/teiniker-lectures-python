@@ -3,10 +3,12 @@ from translator import TranslatorServiceGerman, TranslatorServiceFrench
 
 app = Flask(__name__)
 
+# http://localhost:8080/
 @app.route('/')
 def index():
     return render_template('index.html')
 
+# http://localhost:8080/translator
 @app.route('/translator', methods=['POST'])
 def translate():
     language = request.form.get('language')
