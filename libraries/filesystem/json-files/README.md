@@ -124,9 +124,50 @@ Here's a summary of the key functionalities provided by the json module:
     about the specific location and reason for the decoding error, such as invalid 
     JSON syntax or mismatched data types.
 
+When we parse a JSON file using Python’s built-in json module, the data is 
+typically loaded into a **nested structure of dictionaries and lists**, 
+depending on the structure of the JSON.
+
+| JSON Type | Python Type     |
+| --------- | --------------- |
+| Object    | `dict`          |
+| Array     | `list`          |
+| String    | `str`           |
+| Number    | `int` / `float` |
+| Boolean   | `bool`          |
+| null      | `None`          |
+
+_Example:_ Parsing JSON data
+
+```JSON
+{
+    'person': 
+        {
+            'name': 'John', 
+            'age': 30, 
+            'city': 'Graz'
+        }
+}
+```
+
+```Python
+person = data['person']
+print(person)   # {'name': 'John', 'age': 30, 'city': 'Graz'}
+
+name = person['name']
+print(name)     # John
+
+age = person['age']
+print(age)      # 30
+
+city = person['city']
+print(city)     # Graz
+```
+
 
 ## References
 * [Youtube (Corey Schafer): Working with JSON Data using the json Module](https://youtu.be/9N6a-VLBa2I)
+
 * [Working With JSON Data in Python](https://realpython.com/python-json/)
 * [The Python Standard Library: JSON Encoder and Decoder](https://docs.python.org/3/library/json.html)
 * [RFC7159: The JavaScript Object Notation (JSON) Data Interchange Format](https://datatracker.ietf.org/doc/html/rfc7159.html)
