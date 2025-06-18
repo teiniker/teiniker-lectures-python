@@ -38,6 +38,7 @@ class BytesTest(unittest.TestCase):
         l = list(b)
         self.assertTrue(type(l is list))
         self.assertEqual([249, 205, 185, 236, 68, 216, 211, 193, 141, 65, 205, 242, 106, 230, 18, 60], l)
+        print(type(l[0]))
 
 
 if __name__ == '__main__':
