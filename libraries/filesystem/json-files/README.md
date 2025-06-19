@@ -139,7 +139,7 @@ depending on the structure of the JSON.
 
 _Example:_ Parsing JSON data
 
-```JSON
+```
 {
     'person': 
         {
