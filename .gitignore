@@ -1,4 +1,5 @@
 venv/
+.venv/
 .vscode/
 .mypy_cache/
 misc/

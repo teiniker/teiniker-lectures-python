@@ -31,7 +31,7 @@ We can create a virtual environment using the `venv` module (built
 into Python 3.3+):
 
 ```bash
-$ python3 -m venv venv
+$ python3 -m venv .venv
 ```
 This will create a directory named `venv`, containing the necessary files 
 for an isolated Python environment.
@@ -39,7 +39,7 @@ for an isolated Python environment.
 ## Activating the Virtual Environment
 
 ```bash
-$ source venv/bin/activate
+$ source .venv/bin/activate
 ```
 
 After activation, we will see `(venv)` at the beginning of your terminal prompt, 
@@ -50,13 +50,13 @@ interpreter in the virtual environment.
 
 ```bash
 $ which python
-/home/student/sandbox/venv/bin/python
+/home/student/sandbox/.venv/bin/python
 
 $ python --version
 Python 3.11.2
 
 $ pip --version
-pip 23.0.1 from /home/student/sandbox/venv/lib/python3.11/site-packages/pip (python 3.11)
+pip 23.0.1 from /home/student/sandbox/.venv/lib/python3.11/site-packages/pip (python 3.11)
 ```
 
 

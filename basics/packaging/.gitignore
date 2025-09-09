@@ -1,0 +1,4 @@
+dist/
+src/simple_lib*
+app/.venv/
+
