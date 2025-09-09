@@ -1,5 +1,11 @@
 # Python Packaging 
 
+## Setup Wheel 
+```bash 
+$ pip install --upgrade build twine
+```
+
+
 ## Build a Wheel File 
 Given the following project structure:
 
@@ -54,4 +60,12 @@ $ deactivate
 ```
 
 
+## References
+* [The Packaging Flow](https://packaging.python.org/en/latest/flow/)
+
+* [RealPython: What Are Python Wheels and Why Should You Care?](https://realpython.com/python-wheels/)
+
+* [wheel documentation](https://wheel.readthedocs.io/en/stable/)
+
+*Egon Teiniker, 2020-2025, GPL v3.0*
 
