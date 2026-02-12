@@ -31,7 +31,7 @@ We can create a virtual environment using the `venv` module (built
 into Python 3.3+):
 
 ```bash
-$ python3 -m venv .venv
+$ python -m venv .venv
 ```
 This will create a directory named `venv`, containing the necessary files 
 for an isolated Python environment.
@@ -93,6 +93,22 @@ $ deactivate
 ```
 This will return you to the global Python environment.
 
+
+## Using .venv in VS Code 
+
+After creating the .venv folder in the project's root directory, we can tell 
+VS Code th use the settings from there:
+
+VS Code:
+* [Ctrl] + [Shift] + [P] 
+* Select: Python: Select Interpreter
+* Select: Python 3.x (.venv)
+
+Now when we open a new terninal, we should see the activated virtual environment:
+
+```bash
+(.venv) student@debian13:~/github/teiniker-lectures-python/$ 
+```
 
 
 ## References
