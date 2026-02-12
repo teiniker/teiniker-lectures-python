@@ -1,5 +1,4 @@
-import pytest
-from resistor import Resistor
+from parts.resistor import Resistor
 
 class TestResistor:
     """Tests for the Resistor class."""
