@@ -46,23 +46,18 @@ _Example:_ `test_fibonacci.py`
 from fibonacci import fibonacci_numbers
 
 def test_fibonacci_numbers_zero():
-    """Test case for fibonacci_numbers with size 0, expecting an empty list."""
     assert not fibonacci_numbers(0)
 
 def test_fibonacci_numbers_one():
-    """Test case for fibonacci_numbers with size 1, expecting [0]."""
     assert [0] == fibonacci_numbers(1)
 
 def test_fibonacci_numbers_two():
-    """Test case for fibonacci_numbers with size 2, expecting [0, 1]."""
     assert [0, 1] == fibonacci_numbers(2)
 
 def test_fibonacci_numbers_three():
-    """Test case for fibonacci_numbers with size 3, expecting [0, 1, 1]."""
     assert [0, 1, 1] == fibonacci_numbers(3)
 
 def test_fibonacci_numbers_seven():
-    """Test case for fibonacci_numbers with size 7, expecting the first 7 Fibonacci numbers."""
     assert [0, 1, 1, 2, 3, 5, 8] == fibonacci_numbers(7)
 ```
 
@@ -82,6 +77,53 @@ test_fibonacci. py ......                                                [100%]
 
 Note that `pytest` will run all files of the form `test_*.py` or `*_test.py` 
 in the current directory and its subdirectories.
+
+Common flags you can use when running `pytest` include:
+
+* `-s`, `--capture=no`: Output print statements. 
+
+* `-v`, `--verbose`: Increase verbosity
+
+Possible outcomes of a test: 
+
+* **PASSED (.)**: The test ran successfully. 
+
+* **FAILED (F)**: The test did not run successfully. 
+
+* **SKIPPED (s)**: The test was skipped. We can tell pytest to skip a test by using either 
+    the `@pytest.mark.skip()` or `@pytest.mark.skipif()` decorators.
+
+* **ERROR (E)**: An exception happened either during the execution of a fixture or 
+    hook function, and not during the execution of a test function.
+
+
+### Using assert Statements 
+
+When we write test functions, the normal Python `assert` statement is our 
+primary tool to communicate test failure.
+
+pytest includes a feature called **assert rewriting** that intercepts `assert` 
+calls and replaces them with something that can tell us more about why our 
+assertions failed.
+
+_Examples:_ pytest assert statements
+
+* `assert something` 
+
+* `assert not something` 
+
+* `assert a == b`
+
+* `assert a != b` 
+
+* `assert a is None` 
+
+* `assert a is not None` 
+
+With pytest, we can use `assert <expression>` with any expression.
+
+We can also use `pytest.fail()` as a manual way to **immediately fail** a test 
+with a clear message, even if no assertion has failed yet.
 
 
 ### Compare Floating-Point Values
@@ -146,7 +188,7 @@ def test_divide_by_zero_message():
         divide(10, 0)
 ```
 
-* `match=` checks the error text using regex.
+* `match=` checks the error text using **regex**.
 
 
 _Example:_ Capturing the exception object
@@ -322,5 +364,8 @@ def resistor():
 
 * [pytest](https://docs.pytest.org/en/stable/)
 
+2022)
+
+* Brian Okken. **Python Testing with pytest: Simple, Rapid, Effective, and Scalable**. The Pragmatic Programmers, 2nd edition 2022. 
 
 *Egon Teiniker, 2020-2026, GPL v3.0*
