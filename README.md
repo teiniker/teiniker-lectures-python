@@ -49,13 +49,11 @@ Each of these short videos repeats a specific language construct of the Python p
 
 ## Python Libraries
 
-* [PyTest](libraries/pytest/): Testing framework
-
 * [Filesystem](libraries/filesystem/): Work with various file formats
 
 * [Pandas](libraries/pandas/): Data analysis 
 
-* [Databases](libraries/databases/): Store and retrieve data from relational databases
+* [SQLite](libraries/databases/): Store and retrieve data from a relational database
 
 * [Sockets](libraries/sockets/): Simple network programming
 
