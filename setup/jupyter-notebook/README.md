@@ -55,13 +55,13 @@ $ pip3 install jupyterlab
 $ jupyter lab
 ```    
 
-
-## References
-
+## Tutorials
 * [YouTube (Corey Schafer): Jupyter Notebook Tutorial: Introduction, Setup, and Walkthrough](https://youtu.be/HW29067qVWk?si=JgCTPoVYdx1iv4Wb)
 
+
+## References
 * [Jupyter Project](https://jupyter.org/)
 
 * [Project Jupyter Documentation](https://docs.jupyter.org/en/latest/)
 
-*Egon Teiniker, 2020-2025, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*
