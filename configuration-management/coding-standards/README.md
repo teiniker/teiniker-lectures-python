@@ -1,6 +1,9 @@
 # Python Style Guide
 
-This document gives coding conventions for the Python code.
+There is a **Python style guide** which defines coding conventions for the Python 
+code comprising the standard library in the main Python distribution:
+
+* [PEP 8: Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
 
 Note that many projects have their own coding style guidelines.
 In the event of any conflicts, such project-specific guides take precedence for that project.
@@ -54,4 +57,4 @@ Identifiers used in the standard library must be ASCII compatible as described i
 * [PEP 8 - Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
 
 
-*Egon Teiniker, 2020-2025, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*

@@ -11,13 +11,6 @@ To get access to all the facts about Python you can follow these two sources:
 * [The Python Language Reference](https://docs.python.org/3/reference/index.html)
 * [The Python Standard Library](https://docs.python.org/3/library/index.html)
 
-There is also a **Python style guide** which defines coding conventions for the Python code comprising the standard library
-in the main Python distribution:
-* [Introduction](coding-style-guide/README.md)
-* [PEP 8: Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
-
-The following list references numerous **videos** which are created by by engaged authors and freely accessible on YouTube.
-Each of these short videos repeats a specific language construct of the Python programming language.
 
 ## Python Basics
 
@@ -58,6 +51,15 @@ Each of these short videos repeats a specific language construct of the Python p
 * [Sockets](libraries/sockets/): Simple network programming
 
 * [Flask](libraries/flask/): Implementing web services and web applications
+
+
+## Configuration Management
+
+* [Build Automation](configuration-management/building/)
+
+* [Test Automation](configuration-management/testing/)
+
+* [Debugging](configuration-management/debugging/)
 
 
 ## References
