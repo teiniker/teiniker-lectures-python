@@ -286,8 +286,8 @@ class TestDatabase:
 
 ## Fixtures
 
-In pytest, fixtures are the modern, powerful replacement for `setup_*` 
-and `teardown_*` methods.
+In pytest, fixtures are the modern, powerful **replacement for `setup_*` 
+and `teardown_*` methods**.
 
 A fixture is a function marked with: `@pytest.fixture` that:
 * prepares something a test needs
@@ -296,8 +296,10 @@ A fixture is a function marked with: `@pytest.fixture` that:
 
 A fixture is only available for tests to request if they are in the 
 scope that fixture is defined in:
+
 * If a fixture is defined inside a class, it can only be requested 
     by tests inside that class. 
+
 * If a fixture is defined inside the global scope of the module, 
     then every test in that module, even if it’s defined inside a 
     class, can request it.

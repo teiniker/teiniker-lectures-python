@@ -32,8 +32,6 @@ Each of these short videos repeats a specific language construct of the Python p
   * [Modules](basics/modules/)
  
   * [Packages](basics/packages/)
-    
-  * [Virtual Environments](basics/virtual-environments/README.md)
  
 
 ## Object-Oriented Programming
