@@ -337,6 +337,11 @@ _Example_: Disabling exception chaining
 __main__.DataAccessError: File not found: datx.csv
 ```
 
+## Tutorials
+* [YouTube (Corey Schafer): Using Try/Except Blocks for Error Handling](https://youtu.be/NIWwJbo-9_8)
+* [YouTube (Corey Schafer): Context Managers - Efficiently Managing Resources](https://youtu.be/-aKFBoZpiqA)
+
+
             
 ## References
 * [The Python Tutorial: Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html)
@@ -349,4 +354,4 @@ __main__.DataAccessError: File not found: datx.csv
 * [Python Exceptions: An Introduction](https://realpython.com/python-exceptions/)
 
 
-*Egon Teiniker, 2020-2025, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*

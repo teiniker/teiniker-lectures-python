@@ -358,6 +358,26 @@ def resistor():
     the cleanup code.
 
 
+## Running a Subset of Tests
+
+Running just a small batch of tests is handy while debugging or if we 
+want to limit the tests to a specific section of the code base we are 
+working on at the time.
+
+pytest allows you to run a subset of tests in several ways: 
+
+* **Single test function**: `pytest path/test_module.py::test_function`
+
+* **All tests in a module**: `pytest path/test_module.py`
+
+* **Single test method**: `pytest path/test_module.py::TestClass::test_method` 
+
+* **All tests in a class**: `pytest path/test_module.py::TestClass`
+
+* **All tests in a directory**: `pytest path Tests matching a name pattern pytest -k pattern`
+
+
+
 ## References
 
 * [YouTube: Pytest Tutorial - How to Test Python Code](https://youtu.be/cHYq1MRoyI0?si=HkkHzKJwXz1GQiyO)

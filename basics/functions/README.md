@@ -134,9 +134,12 @@ A function can return any kind of value we need it to, including more
 complicated data structures like **lists** and **dictionaries**.
 
 
+## Tutorials
+* [YouTube (Corey Schafer): Functions](https://youtu.be/9Os0o3wzS_I)
+
+
 ## References
 * Eric Matthes. Python Crash Course. No Starch Press, 2016. Chapter 8: Functions
-
 * [Docstrings in Python](https://www.datacamp.com/community/tutorials/docstrings-python)
 
-*Egon Teiniker, 2020-2025, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*

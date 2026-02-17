@@ -111,8 +111,12 @@ Now when we open a new terninal, we should see the activated virtual environment
 ```
 
 
-## References
+## Tutorials
 
 * [YouTube (Corey Schafer): VENV (Mac & Linux) - How to Use Virtual Environments with the Built-In venv Module](https://youtu.be/Kg1Yvry_Ydk?si=GDD5uxD9AyOJynIc)
 
-*Egon Teiniker, 2020-2025, GPL v3.0*
+
+## References
+
+
+*Egon Teiniker, 2020-2026, GPL v3.0*

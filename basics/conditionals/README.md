@@ -215,10 +215,11 @@ print(process_coordinates((3, 4)))  # Output: Point is at (3, 4)
 Here, each case is defined by a **tuple pattern**.
 
 
-## References
-
+## Tutorials
 * [YouTube (Corey Schafer): Conditionals and Booleans - If, Else, and Elif Statements](https://youtu.be/DZwmZ8Usvnk)
+
+## References
 * [More Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html)
 
 
-*Egon Teiniker, 2020-2025, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*

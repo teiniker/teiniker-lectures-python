@@ -21,106 +21,47 @@ Each of these short videos repeats a specific language construct of the Python p
 
 ## Python Basics
 
-  * **Data Types and Data Structures**
-    * [Introduction](basics/types/)
+  * [Data Types and Data Structures](basics/types/)
 
-    * [YouTube (Corey Schafer): Integers and Floats - Working with Numeric Data](https://youtu.be/khKv-8q7YmY)
-    * [YouTube (Corey Schafer): Strings - Working with Textual Data](https://youtu.be/k9TUPpGqYTo)
-    * [YouTube (Corey Schafer): F-Strings - How to Use Them and Advanced String Formatting](https://youtu.be/nghuHvKLhJA)
+  * [Conditional Statements](basics/conditionals/)
 
-    * [YouTube (Corey Schafer): Lists, Tuples, and Sets](https://youtu.be/W8KRzm-HUcc)
-    * [YouTube (Corey Schafer): Dictionaries - Working with Key-Value Pairs](https://youtu.be/daefaLgNkw0)
-    * [YouTube (Corey Schafer): String Formatting - Advanced Operations for Dicts, Lists, Numbers, and Dates](https://youtu.be/vTX3IwquFkc)
+  * [Loops](basics/loops/)
 
-  * **Conditional Statements**
-    * [Introduction](basics/conditionals/)
-    
-    * [YouTube (Corey Schafer): Conditionals and Booleans - If, Else, and Elif Statements](https://youtu.be/DZwmZ8Usvnk)
+  * [Functions](basics/functions)
 
-  * **Loops**
-    * [Introduction](basics/loops/)
-    
-    * [YouTube (Corey Schafer): Loops and Iterations - For/While Loops](https://youtu.be/6iF8Xb7Z3wQ)
-    * [YouTube: Loop like a native: while, for, iterators, generators](https://youtu.be/EnSu9hHGq5o)
-
-  * **Functions**
-    * [Introduction](basics/functions)
-    
-    * [YouTube (Corey Schafer): Functions](https://youtu.be/9Os0o3wzS_I)
-
-  * **Modules**
+  * [Modules](basics/modules/)
  
-    * [Introduction](basics/modules/)
-    * [YouTube (Corey Schafer): Import Modules and Exploring The Standard Library](https://youtu.be/CqvZ3vGoGs0)
-    * [YouTube (Corey Schafer): if `__name__ == '__main__'`](https://youtu.be/sugvnHA7ElY)
-
-  * **Packages** 
-    * [Introduction](basics/packages/)
+  * [Packages](basics/packages/)
     
-  * **Virtual Environments**
-    * [Introduction](basics/virtual-environments/README.md)
-    * [YouTube (Corey Schafer): VENV (Mac & Linux) - How to Use Virtual Environments with the Built-In venv Module](https://youtu.be/Kg1Yvry_Ydk?si=GDD5uxD9AyOJynIc)
+  * [Virtual Environments](basics/virtual-environments/README.md)
+ 
 
-  * **Jupyter Notebook**
-    * [Introduction](basics/jupyter-notebook/)
-    * [YouTube (Corey Schafer): Jupyter Notebook Tutorial: Introduction, Setup, and Walkthrough](https://youtu.be/HW29067qVWk?si=JgCTPoVYdx1iv4Wb)
-
-
-  ## Object-Oriented Programming
+## Object-Oriented Programming
   
-  * **Classes**
-    * [Introduction](oop/classes/)
-    * [YouTube (Corey Schafer): Classes and Instances](https://youtu.be/ZDa-Z5JzLYM)
-    * [YouTube (Corey Schafer): Property Decorators - Getters, Setters, and Deleters](https://youtu.be/jCzT9XFZ5bw)
-    * [YouTube (Corey Schafer): Special (Magic/Dunder) Methods](https://youtu.be/3ohzBxoFHAY)
-    * [YouTube (Corey Schafer): Class Variables](https://youtu.be/BJ-VvGyQxho)
-    * [YouTube (Corey Schafer): Classmethods and Staticmethods](https://youtu.be/rq8cL2XMM5M)
+  * [Classes](oop/classes/)
     
-  * **Associations**
-    * [Introduction](oop/associations/)
+  * [Associations](oop/associations/)
 
-  * **Inheritance**
-    * [Introduction](oop/inheritance/)
-    * [YouTube (Corey Schafer): Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
+  * [Inheritance](oop/inheritance/)
+    
+  * [Enumerations](oop/enumerations/)
 
-  * **Enumerations**
-    * [Introduction](oop/enumerations/)
-    * [YouTube: Using Enum in Python](https://youtu.be/gPPDXgCMZ0k)
-    * [Python HOWTOs: Enum](https://docs.python.org/3.11/howto/enum.html)
-
-  * **Exceptions**
-    * [Introduction](oop/exceptions/)
-    * [YouTube (Corey Schafer): Using Try/Except Blocks for Error Handling](https://youtu.be/NIWwJbo-9_8)
-    * [YouTube (Corey Schafer): Context Managers - Efficiently Managing Resources](https://youtu.be/-aKFBoZpiqA)
+  * [Exceptions](oop/exceptions/)
 
 
 ## Python Libraries
 
-  * **Test Automation**
-    * [YouTube (Corey Schafer): Unit Testing Your Code with the unittest Module](https://youtu.be/6tNS--WetLI)
+* [PyTest](libraries/pytest/): Testing framework
 
-  * **Date and Time**
-     * [Datetime Module (Dates and Times)](https://youtu.be/RjMbCUpvIgw)
+* [Filesystem](libraries/filesystem/): Work with various file formats
 
-  * **Regular Expressions**
-    * [YouTube (Corey Schafer): re Module - How to Write and Match Regular Expressions (Regex)](https://youtu.be/K8L6KVGG-7o)
+* [Pandas](libraries/pandas/): Data analysis 
 
-  * **File Handling**
-     * [Introduction](libraries/files/)
-     * [YouTube (Corey Schafer): Context Managers - Efficiently Managing Resources](https://youtu.be/-aKFBoZpiqA)
-     * [YouTube (Corey Schafer): File Objects - Reading and Writing to Files](https://youtu.be/Uh2ebFW8OYM)
-     * [YouTube (Corey Schafer): CSV Module - How to Read, Parse, and Write CSV Files](https://youtu.be/q5uM4VKywbA)
+* [Databases](libraries/databases/): Store and retrieve data from relational databases
 
-  * **SQLite Database**
-    * [Introduction](libraries/sqlite/)
-    * [YouTube (Corey Schafer): Python SQLite Tutorial: Complete Overview - Creating a Database, Table, and Running Queries](https://youtu.be/pd-0G0MigUA)
+* [Sockets](libraries/sockets/): Simple network programming
 
-  * **Matplotlib**
-    * [Introduction](libraries/matplotlib/)
-
-  * **HTTP Requests**
-    * [YouTube (Corey Schafer): Python Requests Tutorial: Request Web Pages, Download Images, POST Data, Read JSON, and More](https://youtu.be/tb8gHvYlCFs)
-    * [YouTube (Corey Schafer): Web Scraping with BeautifulSoup and Requests](https://youtu.be/ng2o98k983k)
+* [Flask](libraries/flask/): Implementing web services and web applications
 
 
 ## References
@@ -128,4 +69,4 @@ Each of these short videos repeats a specific language construct of the Python p
 * Slatkin Brett. **Effective Python**. Pearson Education, 2nd Edition, 2020
 * Dusty Phillips. **Python 3 Object-Oriented Programming: Build robust and maintainable software with object-oriented design patterns in Python 3.8**. Packt Publishing, 3rd Edition 2018
 
-*Egon Teiniker, 2020-2025, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*

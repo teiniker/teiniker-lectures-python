@@ -6,6 +6,7 @@ Whether it’s writing to a simple text file, reading a complicated server log, 
 analyzing raw byte data, all of these situations require reading or writing a file.
 
 * [Text Files](text-files/)
+
 * [Binary Files](binary-files/)
 
 * [CSV Files](csv-files/)
@@ -13,5 +14,11 @@ analyzing raw byte data, all of these situations require reading or writing a fi
 * [JSON Files](json-files/)
 
 
-*Egon Teiniker, 2020-2025, GPL v3.0*
+## Tutorials 
+
+* [YouTube (Corey Schafer): Context Managers - Efficiently Managing Resources](https://youtu.be/-aKFBoZpiqA)
+* [YouTube (Corey Schafer): File Objects - Reading and Writing to Files](https://youtu.be/Uh2ebFW8OYM)
+* [YouTube (Corey Schafer): CSV Module - How to Read, Parse, and Write CSV Files](https://youtu.be/q5uM4VKywbA)
+
+*Egon Teiniker, 2020-2026, GPL v3.0*
 

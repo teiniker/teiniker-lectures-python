@@ -308,6 +308,14 @@ Python will disregard the parent class method and only pay attention
 to the method you define in the child class.
 
 
+## Tutorials
+* [YouTube (Corey Schafer): Classes and Instances](https://youtu.be/ZDa-Z5JzLYM)
+* [YouTube (Corey Schafer): Property Decorators - Getters, Setters, and Deleters](https://youtu.be/jCzT9XFZ5bw)
+* [YouTube (Corey Schafer): Special (Magic/Dunder) Methods](https://youtu.be/3ohzBxoFHAY)
+* [YouTube (Corey Schafer): Class Variables](https://youtu.be/BJ-VvGyQxho)
+* [YouTube (Corey Schafer): Classmethods and Staticmethods](https://youtu.be/rq8cL2XMM5M)
+ 
+
 ## References
 * Eric Matthes. Python Crash Course. No Starch Press, 2016. 
     * Chapter 9: Classes
@@ -324,4 +332,4 @@ to the method you define in the child class.
 * [Python __eq__](https://www.pythontutorial.net/python-oop/python-__eq__)
 
 
-*Egon Teiniker, 2020-2025, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*

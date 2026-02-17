@@ -439,6 +439,16 @@ for q, a in zip(questions, answers):
 ```
 
 
+## Tutorials
+* [YouTube (Corey Schafer): Integers and Floats - Working with Numeric Data](https://youtu.be/khKv-8q7YmY)
+* [YouTube (Corey Schafer): Strings - Working with Textual Data](https://youtu.be/k9TUPpGqYTo)
+* [YouTube (Corey Schafer): F-Strings - How to Use Them and Advanced String Formatting](https://youtu.be/nghuHvKLhJA)
+
+* [YouTube (Corey Schafer): Lists, Tuples, and Sets](https://youtu.be/W8KRzm-HUcc)
+* [YouTube (Corey Schafer): Dictionaries - Working with Key-Value Pairs](https://youtu.be/daefaLgNkw0)
+* [YouTube (Corey Schafer): String Formatting - Advanced Operations for Dicts, Lists, Numbers, and Dates](https://youtu.be/vTX3IwquFkc)
+
+
 ## References
 * [Python Language Reference: Data Model](https://docs.python.org/3/reference/datamodel.html)
 

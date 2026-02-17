@@ -100,7 +100,12 @@ of the search path, ahead of the standard library path.
 This means that scripts in that directory will be loaded instead of modules 
 of the same name in the library directory. 
 
+## Tutorials
+* [YouTube (Corey Schafer): Import Modules and Exploring The Standard Library](https://youtu.be/CqvZ3vGoGs0)
+* [YouTube (Corey Schafer): if `__name__ == '__main__'`](https://youtu.be/sugvnHA7ElY)
+
+
 ## References
 * [Modules](https://docs.python.org/3/tutorial/modules.html)
 
-*Egon Teiniker, 2020-2025, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*

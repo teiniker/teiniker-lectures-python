@@ -80,9 +80,12 @@ for key, value in person.items():
     print(key, ":", value)
 ```
 
-## References
+## Tutorials
 * [YouTube (Corey Schafer): Loops and Iterations - For/While Loops](https://youtu.be/6iF8Xb7Z3wQ)
 * [YouTube: Loop like a native: while, for, iterators, generators](https://youtu.be/EnSu9hHGq5o)
+
+
+## References
 * [More Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html)
 
-*Egon Teiniker, 2020-2025, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*

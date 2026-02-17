@@ -36,10 +36,16 @@ SQLite is defined by the following features:
 * [SQLite Utils](sqlite-utils/README.md)
 
 
+## Tutorials
+
+* [YouTube (Corey Schafer): Python SQLite Tutorial: Complete Overview - Creating a Database, Table, and Running Queries](https://youtu.be/pd-0G0MigUA)
+
+
 ## References
+
 * [SQLite: Tutorial](https://www.sqlitetutorial.net/)
 * [SQLite:In-Memory Databases](https://www.sqlite.org/inmemorydb.html)
 
 * Jay A. Kreibich. **Using SQLite: Small. Fast. Reliable. Choose Any Three.** O'Reilly Media, 2010. 
 
-*Egon Teiniker, 2020-2025, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*
