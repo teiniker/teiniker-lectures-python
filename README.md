@@ -61,6 +61,8 @@ To get access to all the facts about Python you can follow these two sources:
 
 * [Debugging](configuration-management/debugging/)
 
+* [Coding Standards](configuration-management/coding-standards/)
+
 
 ## References
 * Eric Matthes. **Python Crash Course**. No Starch Press, 2016
