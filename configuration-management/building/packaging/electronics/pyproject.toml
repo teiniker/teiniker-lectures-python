@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "electronics"
+version = "0.1.0"
+description = "Library of electronic parts"
+authors = [{ name = "homer", email = "homer@springfield.com" }]
+requires-python = ">=3.8"
+dependencies = []
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

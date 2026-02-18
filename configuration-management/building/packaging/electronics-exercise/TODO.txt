@@ -1,0 +1,34 @@
+Exercise: Python Packaging - electronics
+-------------------------------------------------------------------------------
+
+Given a simple Python module: "parts.py" and the test cases in "resistor_test.py"
+
+A) Project Layout 
+Create the following project layout for an electronics library:
+
+    ├── README.txt
+    ├── src
+    │   └── electronics
+    │       ├── __init__.py
+    │       └── parts.py
+    └── test
+        └── resistor_test.py
+
+B) Create a Source and a Wheel Distribution 
+Implement a "pyproject.toml" file and create the following distrinution files:
+
+    dist/
+    ├── electronics-0.1.0-py3-none-any.whl
+    └── electronics-0.1.0.tar.gz
+
+C) Run Unit Tests 
+Go into the test folder, create a virtual environment and install the 
+"electronics-0.1.0-py3-none-any.whl" file via pip.
+Run the "resistor_test.py" file to execute the unit test cases.
+
+D) Bytecode Distribution 
+Turn the "electronics-0.1.0-py3-none-any.whl" file into a bytecode 
+distribution (only .pyc files are shipped).
+Run the test cases again.
+
+
