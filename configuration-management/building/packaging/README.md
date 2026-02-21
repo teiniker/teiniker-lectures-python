@@ -272,4 +272,4 @@ $ deactivate
 * [wheel documentation](https://wheel.readthedocs.io/en/stable/)
 
 
-*Egon Teiniker, 2025, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*
