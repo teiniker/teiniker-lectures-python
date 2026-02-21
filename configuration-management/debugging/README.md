@@ -80,7 +80,7 @@ The following techniques are commonly used to find bugs in applications:
 ## References
 * Andreas Zeller. **Why Programs Fail - A Guide to Systematic Debugging**. dpunkt.verlag, 2009
 
-*Egon Teiniker, 2020-2025, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*
 
 
 
