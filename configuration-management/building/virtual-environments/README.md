@@ -118,5 +118,7 @@ Now when we open a new terninal, we should see the activated virtual environment
 
 ## References
 
+* [RealPython: Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/)
+* [Virtual Environments and Packages](https://docs.python.org/3/tutorial/venv.html)
 
 *Egon Teiniker, 2020-2026, GPL v3.0*
