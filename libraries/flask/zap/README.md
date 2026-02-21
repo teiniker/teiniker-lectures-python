@@ -18,14 +18,14 @@ To get a first impression of the possibilities of ZAP, visit the
 
 ## ZAP Tutorials 
 **Introduction**
-* [Youtbe (Bennetts): Introduction to ZAP](https://youtu.be/CxjHGWk4BCs)
-* [Youtbe (Bennetts): ZAP 2.10.0 Introduction](https://youtu.be/rrVr-_-y6Xo)
-* [Youtbe (Bennetts): Configuration](https://youtu.be/EIUlCknXMSI)
+* [YouTube (Bennetts): Introduction to ZAP](https://youtu.be/CxjHGWk4BCs)
+* [YouTube (Bennetts): ZAP 2.10.0 Introduction](https://youtu.be/rrVr-_-y6Xo)
+* [YouTube (Bennetts): Configuration](https://youtu.be/EIUlCknXMSI)
 
 **Vulnerability Scanning**
-* [Youtbe (Bennetts): Exploring with the Standard Spider](https://youtu.be/mz2nhYpU-sw)
-* [Youtbe (Bennetts): Passive Scanning](https://youtu.be/Rx42kyrB0nk)
-* [Youtbe (Bennetts): Active Scanning](https://youtu.be/z2r4xGMQlys)
+* [YouTube (Bennetts): Exploring with the Standard Spider](https://youtu.be/mz2nhYpU-sw)
+* [YouTube (Bennetts): Passive Scanning](https://youtu.be/Rx42kyrB0nk)
+* [YouTube (Bennetts): Active Scanning](https://youtu.be/z2r4xGMQlys)
 
 
 

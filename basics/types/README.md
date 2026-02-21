@@ -207,7 +207,7 @@ assert [16, 25] == squares[3:]
 
 Lists also support operations like **concatenation**:
 
-_Example:_ Concatination of lists
+_Example:_ Concatenation of lists
 ```Python
 assert [1, 2, 3, 4, 5, 6, 7] == [1, 2, 3, 4] + [5, 6, 7]
 ```
@@ -298,7 +298,7 @@ assert 4 == y
 assert 9 == z
 ```
 
-_Example:_ Concatination
+_Example:_ Concatenation
 ```Python
 assert (1, 2, 3, 4, 5, 6, 7) == (1, 2, 3, 4) + (5, 6, 7)
 ```
@@ -417,7 +417,7 @@ _Examples:_ Length of a dictionary
 assert 3 == len(person)
 ```
 
-_Examples:_ Retrive keys, values, and items
+_Examples:_ Retrieve keys, values, and items
 ```Python
 assert sorted(person.keys()) == ['age', 'city', 'name']
 print(person.values())

@@ -6,10 +6,10 @@ Instead of using a single command to install the numpy package:
 $ pip install numpy
 ```
 
-We want to download the source and built distributins and analyze their content: 
+We want to download the source and built distributions and analyze their content: 
 
 
-1. Download numpy packages from PyPi:
+1. Download numpy packages from PyPI:
 
     Visit the [numpy PyPI page](https://pypi.org/project/numpy/#files) to view available distributions.
 

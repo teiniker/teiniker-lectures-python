@@ -113,7 +113,7 @@ The DDL is used to define the structure of data containers and objects within th
 database. The most common of these containers and objects are tables, indexes, 
 and views.
 
-* **CREADE**: The `CREATE` command is used to create a new table, index, or view. 
+* **CREATE**: The `CREATE` command is used to create a new table, index, or view. 
     The `CREATE` command can also be used to create a new database.
     
     _Example:_ `CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT, password TEXT);`

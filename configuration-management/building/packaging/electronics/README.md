@@ -44,7 +44,7 @@ $ python resistor_test.py
 ```
 
 
-## Build Bytcode Distribution 
+## Build Bytecode Distribution 
 
 Compile the .py files into .pyc files:
 

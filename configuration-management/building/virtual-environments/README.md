@@ -104,7 +104,7 @@ VS Code:
 * Select: Python: Select Interpreter
 * Select: Python 3.x (.venv)
 
-Now when we open a new terninal, we should see the activated virtual environment:
+Now when we open a new terminal, we should see the activated virtual environment:
 
 ```bash
 (.venv) student@debian13:~/github/teiniker-lectures-python/$ 

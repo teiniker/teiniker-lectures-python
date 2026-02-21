@@ -29,7 +29,7 @@ SQLite is defined by the following features:
 
 
 * [Structured Query Language (SQL)](sql) 
-* [Pyton Programming](python/)
+* [Python Programming](python/)
 
 * [DB Browser](db-browser/README.md)
 * [VS Code](vscode/README.md)

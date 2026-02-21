@@ -118,15 +118,15 @@ the functionality of these access modifiers.
     `_object._class__variable`.
 
 Double underscores are not very common in practice.
-If we need to define attibutes as private, we use a single underscore, 
+If we need to define attributes as private, we use a single underscore, 
 and respect the Python convention that it is a private attribute.
 
 
 ### Properties
-Poperties are used when we need to define **access control** to some 
+Properties are used when we need to define **access control** to some 
 attributes in an object.
 
-In other programming languages like Java, we create accress methods 
+In other programming languages like Java, we create access methods 
 (getters and setters) but in Python we use properties instead.
 
 ```Python
@@ -144,7 +144,7 @@ In other programming languages like Java, we create accress methods
 The `@property` method will return the value held by a private attribute.
 
 The `@<property-name>.setter` method takes a value and validates it before 
-the value will be stored in a private attrbute.
+the value will be stored in a private attribute.
 
 ```Python
 r1 = Resistor(100,1)
@@ -293,7 +293,7 @@ from a convention of calling the parent class a **superclass** and
 the child class a **subclass**.
 
 The `__init__()` method for a child class needs help from its parent 
-class, so it calls `super().__init__()` to inizialize the attributes 
+class, so it calls `super().__init__()` to initialize the attributes 
 of the parent class.
 
 Once we have a child class that inherits from a parent class, we can 

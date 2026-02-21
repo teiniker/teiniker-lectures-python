@@ -8,7 +8,7 @@ Python has built-in `assert` statement to use assertion condition in the program
 `assert` statement has a **condition or expression** which is **supposed to be always true**. 
 If the condition is false assert halts the program and gives an `AssertionError`.
 
-Syntax for using assert in Pyhton:
+Syntax for using assert in Python:
 ``` 
 assert <condition>
 assert <condition>,<error message>
