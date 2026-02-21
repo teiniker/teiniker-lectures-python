@@ -3,3 +3,7 @@ venv/
 .vscode/
 .mypy_cache/
 misc/
+./**/__pycache__/
+./**/*.pyc
+./**/*.pyo
+./**/*.pyd
