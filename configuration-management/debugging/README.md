@@ -62,11 +62,19 @@ The issue of debugging is to **identify the infection chain, to find its root ca
 
 The following techniques are commonly used to find bugs in applications:
 
-* [Logging](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging/logging)
+* [Logging](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging/logging):
+  Logging adds timestamped messages to record program flow and state, helping 
+  trace failures and narrow down where infections begin.
 
-* [Interactive Debugging](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging/debugger)
+* [Interactive Debugging](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging/debugger):
+  Using an IDE debugger lets you set breakpoints, step through code, and inspect 
+  variables at runtime to observe program state and pinpoint where the infection 
+  chain starts.
 
 * [Assertions](https://github.com/teiniker/teiniker-lectures-softwaretesting/tree/master/debugging/assertions)
+  Assertions are statements used to confidently state a fact about the program's 
+  state at a specific point during execution. They act as internal self-checks. 
+  If the state is not as expected, the program halts immediately with an `AssertionError`.
 
 
 ## References

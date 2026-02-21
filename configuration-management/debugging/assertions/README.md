@@ -34,4 +34,4 @@ Note that assignments to `__debug__` are illegal.
 * [Python Assert Statement](https://www.programiz.com/python-programming/assert-statement)
 * [The assert statement](https://docs.python.org/3/reference/simple_stmts.html#assert)
 
-*Egon Teiniker, 2020-2021, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*

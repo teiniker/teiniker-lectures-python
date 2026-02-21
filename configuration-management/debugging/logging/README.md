@@ -49,4 +49,4 @@ Some of the commonly used parameters are the following:
 * [Basic Logging Tutorial](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
 * [Logging facility for Python](https://docs.python.org/3/library/logging.html)
 
-*Egon Teiniker, 2020-2022, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*
