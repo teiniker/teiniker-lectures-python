@@ -30,6 +30,8 @@ owned object has no knowledge of its owner.
 
 In this example, a `User` has exactly one `Mail` address.
 
+![ClassDiagram-User-Mail-1](figures/ClassDiagram-User-Mail-1.png)
+
 ```python
 class Mail():
     def __init__(self, address):
@@ -61,6 +63,8 @@ This is commonly implemented by having the "one" side hold a collection
 
 Here, a `User` can have multiple `Mail` addresses.
 
+![ClassDiagram-User-Mail-2](figures/ClassDiagram-User-Mail-2.png)
+
 ```python
 class User():
     def __init__(self, oid, username, password):
@@ -91,6 +95,8 @@ in sync.
 
 In this example, a `User` can have multiple `Mail` addresses, and each
 `Mail` address knows which `User` it belongs to.
+
+![ClassDiagram-User-Mail-2](figures/ClassDiagram-User-Mail-3.png)
 
 ```python
 class Mail():
