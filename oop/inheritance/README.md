@@ -18,6 +18,8 @@ Let's start with a situation where we have two classes, `Resistor` and
 
 **Example: `resistor_capacitor1.py`**
 
+![ClassDiagram-Resistor-Capacitor-1](figures/ClassDiagram-Resistor-Capacitor-1.png)
+
 ```python
 class Resistor():
     def __init__(self, value, tolerance=2):
@@ -58,6 +60,8 @@ the shared logic.
 
 We can create a `Part` class to contain the shared `value` and `tolerance`
 attributes. `Resistor` and `Capacitor` can then inherit from `Part`.
+
+![ClassDiagram-Resistor-Capacitor-2](figures/ClassDiagram-Resistor-Capacitor-2.png)
 
 ```python
 class Part():   # Base Class (aka Super Class)
@@ -108,6 +112,8 @@ classes *must* implement.
 In this example, `Part` is an abstract base class. It defines the common
 interface for all parts, but you cannot create a generic `Part` instance.
 The `abc` module is used to achieve this.
+
+![ClassDiagram-Resistor-Capacitor-3](figures/ClassDiagram-Resistor-Capacitor-3.png)
 
 ```python
 from abc import ABC
