@@ -8,18 +8,17 @@ For other platforms, the respective manuals must be used as an aid.
 Make sure that you have installed Python on your machine. If you use the Virtual Lab,
 the following commands should work out of the box:
 ```
-    $ python3 --version
-    Python 3.11.2
+    $ python --version
+    Python 3.13.5
 
-    $ pip3 --version
-    pip 23.0.1 from /usr/lib/python3/dist-packages/pip (python 3.11)
+    $ pip --version
+    pip 25.1.1 from /usr/lib/python3/dist-packages/pip (python 3.13)
 ```
 
 Basically, we could work directly with the command line Python interpreter like:
 ```
-    $ python3
-    Python 3.11.2 (default, Jul 25 2020, 13:03:44)
-    [GCC 8.3.0] on linux
+    $ python
+    Python 3.13.5 (main, Jun 25 2025, 18:55:22) [GCC 14.2.0] on linux
     Type "help", "copyright", "credits" or "license" for more information.
     >>> print('Hello world!')
     Hello world!
@@ -35,7 +34,7 @@ It monitors your program, noting which parts of the code have been executed,
 then analyzes the source to identify code that could have been executed but
 was not.
 ```
-$ pip3 install coverage
+$ pip install coverage
 ```
 
 ```
