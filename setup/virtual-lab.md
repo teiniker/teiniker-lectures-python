@@ -43,4 +43,4 @@ You are free to change the passwords and create new user accounts.
 * [Oracle VirtualBox](https://www.virtualbox.org/)
 
 
-*Egon Teiniker, 2020-2022, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*
