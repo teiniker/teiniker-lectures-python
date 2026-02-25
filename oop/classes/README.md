@@ -154,7 +154,7 @@ assert 1 == r1.tolerance
 Note that the usage of properties is **transparent to the code outside a class**.
 
 
-## Making an Class Instance
+## Making a Class Instance
 
 When Python reads the following line, it calls the `__init__()` method:
 

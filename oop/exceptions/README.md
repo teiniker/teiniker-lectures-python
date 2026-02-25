@@ -49,7 +49,7 @@ _Example_: Input validation
         self.tolerance = tolerance  
 ```
 
-### Build-In Exceptions
+### Built-In Exceptions
 
 #### Base Classes
 * **Exception** \
@@ -263,7 +263,7 @@ as the last task before the `try` statement completes.
 The `finally` clause runs whether or not the `try` statement produces 
 an exception.
 
-### Predefines Clean-up Actions
+### Predefined Clean-up Actions
 The `with` statement allows objects like files to be used in a way 
 that ensures they are always cleaned up promptly and correctly.
 
