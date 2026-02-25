@@ -2,11 +2,11 @@
 
   * [Classes](classes/)
     
+  * [Enumerations](enumerations/)
+    
   * [Associations](associations/)
 
   * [Inheritance](inheritance/)
-    
-  * [Enumerations](enumerations/)
 
   * [Exceptions](exceptions/)
 
