@@ -20,7 +20,7 @@ Linux image.
 
 ## Install the Linux Image
 
-You can find the current (Debian 11) and older Linux images in the following folder for 
+You can find the current (Debian 13) and older Linux images in the following folder for 
 free download:
 
 `https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l`
