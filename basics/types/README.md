@@ -57,7 +57,7 @@ Python strings cannot be changed — they are **immutable**.
 The built-in function `len()` returns the length of a string
 
 If you don’t want characters prefaced by `\` to be interpreted as 
-**special characters**,we can use **raw strings** by adding an `r` 
+**special characters**, we can use **raw strings** by adding an `r` 
 before the first quote.
 
 _Example:_ Raw string
@@ -355,10 +355,11 @@ assert not empty_set
 _Example:_ Fast membership testing 
 ```Python
 assert 'orange' in basket
-assert 'crabgrass' not in basket```
-
+assert 'crabgrass' not in basket
+```
 
 _Example:_ Iterate over a set
+
 ```Python
 for fruit in ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']:
     assert fruit in basket

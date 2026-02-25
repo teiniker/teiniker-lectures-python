@@ -1,5 +1,9 @@
 # For Loop Variants
 
+# Loop 10 times
+for _ in range(10):
+    print("Hello!")
+
 # Loop from 0 to 9
 for i in range(10):
     print(i)

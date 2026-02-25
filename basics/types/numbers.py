@@ -11,7 +11,7 @@ assert a * b == 30
 
 c = 10/3
 print(type(c))
-print(c)
+print(c)    # 3.3333333333333335
 
 assert a // b == 3
 assert a % b == 1

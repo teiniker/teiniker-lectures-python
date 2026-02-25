@@ -70,7 +70,7 @@ The condition uses the **and** operator, meaning both conditions must
 be `True` for the code inside if to execute.
 
 
-_Example:_ Using if-else with in Operator
+_Example:_ Using if-else with `in` Operator
 
 ```Python
 fruits = ["apple", "banana", "cherry"]
@@ -162,7 +162,7 @@ Multiple Values in One Case `case 'a' | 'e' | 'i' | 'o' | 'u':`
 The `|` (pipe symbol) acts as an **OR operator**.
 
 
-_Example:_ Using case _ if for Conditional Matching
+_Example:_ Using `case _ if` for Conditional Matching
 
 ```Python
 def number_type(num):

@@ -25,6 +25,12 @@ for i in range(10):
     print(i)
 ```
 
+_Example:_ Loop 10 times
+
+```python
+for _ in range(10):
+    print("Hello!")
+```
 
 _Example:_ Loop from 5 to 14
 

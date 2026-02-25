@@ -4,20 +4,20 @@ A package is essentially a directory that organizes modules (Python files)
 in a hierarchical structure. Packages help in structuring the code and make 
 it easier to manage large codebases by grouping related modules together.
 
-* **Directory with __init__.py**: A package is identified by the presence 
-    of an __init__.py file in a directory. This file can be empty or execute 
+* **Directory with `__init__.py`**: A package is identified by the presence 
+    of an `__init__.py` file in a directory. This file can be empty or execute 
     initialization code for the package.
 
 * **Hierarchical Structure**: Packages can contain sub-packages, which in 
     turn can contain their own modules and sub-packages. This creates a 
     nested, tree-like structure.
 
-* **Namespace Organization**: By using packages, you avoid naming conflicts 
+* **Namespace Organization**: By using packages, we avoid naming conflicts 
     between modules with the same name that reside in different packages.
 
-* **Importing**: You can import modules from a package using dot notation. 
-    For example, if you have a package named mypackage with a module 
-    mymodule, you can import it with from mypackage import mymodule.
+* **Importing**: We can import modules from a package using **dot notation**. 
+    For example, if we have a package named `mypackage` with a module 
+    `mymodule`, we can import it with `from mypackage import mymodule`.
 
 
 _Example_: Package structure (filesystem).
