@@ -273,41 +273,6 @@ _Example_:
         return Resistor(self._value + other._value)
 ``` 
 
-
-## Inheritance
-When one class inherits from another, it automatically **takes on all the 
-attributes and methods of the first class**. The original class is called 
-the **parent class**, and the new class is the **child class**.
-
-The child class inherits every attribute and method from its parent class 
-but is also free to define new attributes and methods of its own.
-
-When we create a child class, the parent class must be part of the current 
-file and must appear before the child class in the file. 
-The name of the parent class must be included in parentheses in the definition 
-of the child class.
-
-The `super()` function is a special function that helps Python make 
-connections between the parent and child class. The name super comes 
-from a convention of calling the parent class a **superclass** and 
-the child class a **subclass**.
-
-The `__init__()` method for a child class needs help from its parent 
-class, so it calls `super().__init__()` to initialize the attributes 
-of the parent class.
-
-Once we have a child class that inherits from a parent class, we can 
-**add any new attributes and methods** necessary to differentiate the 
-child class from the parent class.
-
-We can **override** any method from the parent class that doesn’t 
-fit what we’re trying to model with the child class. 
-To do this, we define a method in the child class with the same name 
-as the method you want to override in the parent class.
-Python will disregard the parent class method and only pay attention 
-to the method you define in the child class.
-
-
 ## Tutorials
 * [YouTube (Corey Schafer): Classes and Instances](https://youtu.be/ZDa-Z5JzLYM)
 * [YouTube (Corey Schafer): Property Decorators - Getters, Setters, and Deleters](https://youtu.be/jCzT9XFZ5bw)

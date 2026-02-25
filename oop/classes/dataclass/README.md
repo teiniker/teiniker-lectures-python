@@ -25,3 +25,5 @@ Note that we can also override the `__eq__()` method in our `Article` class to c
 * [The Python Standard Library: dataclasses — Data Classes](https://docs.python.org/3/library/dataclasses.html)
 
 * [PEP 557 – Data Classes](https://peps.python.org/pep-0557/)
+
+*Egon Teiniker, 2020-2026, GPL v3.0*

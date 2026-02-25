@@ -1,14 +1,36 @@
 # Inheritance
 
-In object-oriented programming, **inheritance** is a powerful mechanism that
-allows a new class (called a **subclass** or **child class**) to be based
-on an existing class (the **superclass** or **parent class**). The child
-class "inherits" the attributes and methods of the parent class, allowing
-for code reuse and the creation of a logical "is-a" relationship.
+When one class inherits from another, it automatically **takes on all the 
+attributes and methods of the first class**. The original class is called 
+the **parent class**, and the new class is the **child class**.
 
-For example, a `Car` is a `Vehicle`. The `Car` class can inherit common
-properties from the `Vehicle` class (like `speed` and `color`) while
-adding its own specific properties (like `trunk_size`).
+The child class inherits every attribute and method from its parent class 
+but is also free to define new attributes and methods of its own.
+
+When we create a child class, the parent class must be part of the current 
+file and must appear before the child class in the file. 
+The name of the parent class must be included in parentheses in the definition 
+of the child class.
+
+The `super()` function is a special function that helps Python make 
+connections between the parent and child class. The name `super` comes 
+from a convention of calling the parent class a **superclass** and 
+the child class a **subclass**.
+
+The `__init__()` method for a child class needs help from its parent 
+class, so it calls `super().__init__()` to initialize the attributes 
+of the parent class.
+
+Once we have a child class that inherits from a parent class, we can 
+**add any new attributes and methods** necessary to differentiate the 
+child class from the parent class.
+
+We can **override** any method from the parent class that doesn’t 
+fit what we’re trying to model with the child class. 
+To do this, we define a method in the child class with the same name 
+as the method you want to override in the parent class.
+Python will disregard the parent class method and only pay attention 
+to the method you define in the child class.
 
 
 ## Code Duplication and Duck Typing
@@ -176,7 +198,7 @@ to the `Part` interface.
 ## Tutorials
 * [YouTube (Corey Schafer): Inheritance - Creating Subclasses](https://youtu.be/RSl87lqOXDE)
 
-
 ## References
+* [Python Tutorial: Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
 
 *Egon Teiniker, 2020-2026, GPL v3.0*
