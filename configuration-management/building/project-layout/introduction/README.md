@@ -80,6 +80,83 @@ project/
 * `bin/`: Utility scripts, e.g. deployment helpers, data processing scripts, etc.
 
 
+## Running Tests
+
+With a src layout, Python does not automatically know that `src/` 
+should be on the import path.
+Therefore, when pytest runs, it may fail.
+
+There are different ways to make pytest find the parts package...
+
+
+### Configure pytest 
+
+Create a `pytest.ini` file in the project root:
+
+```ini
+[pytest]
+pythonpath = src
+testpaths = test
+```
+
+With this configuration file in place, we can run our test cases:
+
+```bash
+$ pytest
+```
+
+
+### Install the Package in Editable Mode
+
+This approach requires a `pyproject.toml` file so Python knows how 
+to install the package.
+
+_Example:_ Minimal `pyproject.toml` file
+
+```toml
+[project]
+name = "parts"
+version = "0.0.1"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+```
+
+Now we can install the package in editable mode.
+
+From the project root:
+
+```bash
+$ pip install -e .
+$ pytest
+```
+
+This approach has many advantages:
+* Mimics real usage
+* Works reliably in CI/CD
+* Scales for large projects
+
+
+### Configure VS Code 
+
+In order to make the src layout work in VS code, we have to add 
+these lines to `settings.json`:
+
+```json
+{
+
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/src"
+  ],
+
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["test"]
+
+}
+```
+
+
+
 ## References 
 
 * [Real Python: project layout](https://realpython.com/ref/best-practices/project-layout/)
