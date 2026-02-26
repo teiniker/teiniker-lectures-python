@@ -2,6 +2,10 @@
 
 * [Build Steps](build-steps/README.md)
 
+* Project Layout
+    - [Introduction](project-layout/introduction/README.md)
+    - Example: [resistor-layout](project-layout/resistor-layout/)
+    
 * [Virtual Environments](virtual-environments/README.md)
 
 * Packaging
