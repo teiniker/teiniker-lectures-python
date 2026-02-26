@@ -22,7 +22,7 @@ our projects remain manageable, dependency conflicts are avoided, and
 our Python setup remains clean. 
 
 Whether we are working on a single project or multiple, `venv` is an 
-essential tool for Python developers. 🚀
+essential tool for Python developers. 
 
 
 ## Creating a Virtual Environment
