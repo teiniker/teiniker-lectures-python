@@ -25,8 +25,8 @@ steps:
     Bytecode is a low-level, platform-independent set of instructions. It is not
     machine code that the CPU can execute directly; rather, it is a specific
     instruction set designed for the Python interpreter. This makes Python code
-    portable across different operating systems. However, the bytecode format is
-    not standardized and depends on the Python version.
+    portable across different operating systems. However, the **bytecode format is
+    not standardized and depends on the Python version**.
 
 4.  **Python Virtual Machine (PVM)**:
     The PVM is the runtime engine of Python. It acts as a loop that iterates
