@@ -65,9 +65,9 @@ At a minimum, the `pyproject.toml` file needs a `[build-system]` table specifyin
 The particular build tool you choose dictates what additional information 
 is required in the `pyproject.toml` file. For example, we might specify:
 
-* A [project] table containing project Core Metadata (name, version, author and so forth),
+* A `[project]` table containing project Core Metadata (name, version, author and so forth),
 
-* A [tool] table containing tool-specific configuration options.
+* A `[tool]` table containing tool-specific configuration options.
 
 
 _Example:_ Configuration file using wheel
