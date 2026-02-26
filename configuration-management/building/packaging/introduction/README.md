@@ -31,7 +31,7 @@ To use the package, end users must:
     This step may involve a build/compile step which, if needed, must be described by 
     the package metadata.
 
-These last 2 steps are typically performed by `pip` when an end user runs **pip install**.
+These last 2 steps are typically performed by **pip** when an end user runs `pip install`.
 
 
 
