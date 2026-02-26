@@ -42,7 +42,7 @@ for an isolated Python environment.
 $ source .venv/bin/activate
 ```
 
-After activation, we will see `(venv)` at the beginning of your terminal prompt, 
+After activation, we will see `(.venv)` at the beginning of your terminal prompt, 
 indicating that the virtual environment is active.
 
 Also, in the new environment, the `python` command will point to the Python
