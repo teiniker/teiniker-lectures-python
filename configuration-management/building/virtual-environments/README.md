@@ -33,7 +33,7 @@ into Python 3.3+):
 ```bash
 $ python -m venv .venv
 ```
-This will create a directory named `venv`, containing the necessary files 
+This will create a directory named `.venv`, containing the necessary files 
 for an isolated Python environment.
 
 ## Activating the Virtual Environment
