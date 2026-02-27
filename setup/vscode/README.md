@@ -1,8 +1,9 @@
 # Visual Studio Code for Python
 
-Visual Studio Code is a **source code editor** with support for development operations like debugging, 
-task running, and version control. 
-It aims to provide just the tools a developer needs for a quick code-build-debug cycle.
+Visual Studio Code is a **source code editor** with support for development 
+operations like debugging, task running, and version control. 
+It aims to provide just the tools a developer needs for a quick 
+code-build-debug cycle.
 
  
 ## Setup VS Code for Python
@@ -11,7 +12,9 @@ It aims to provide just the tools a developer needs for a quick code-build-debug
 
 * Install the **Python Extension** from Microsoft (**ms-python.python**) including 
   the **pylint** package.
-* Select your **Python interpreter** by clicking on the VS Code **status bar**: `/bin/python3`
+
+* Select your **Python interpreter** by clicking on the VS Code **status bar**: `/bin/python`
+
 * Configure the **debugger** through the **Debug Activity Bar**: create a `launch.json` file: 
  ```      
 {
@@ -33,10 +36,10 @@ To set the right **Python version** (python3) for the **Code Runner** as well, w
 `settings.json` file to the `.vscode` directory:
 ```   
 {
-    "python.pythonPath": "python3",
+    "python.pythonPath": "python",
     "python.terminal.executeInFileDir" : true,
     "code-runner.executorMap": {
-        "python": "python3 -u",
+        "python": "python -u",
     },
     "code-runner.fileDirectoryAsCwd": true
 }
@@ -47,4 +50,4 @@ _Tip_: You can find both JSON files in this documentation directory.
 ## References
 * [Visual Studio Code](https://code.visualstudio.com/)
 
-*Egon Teiniker, 2020-2022, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*
