@@ -235,7 +235,7 @@ _Example:_ Install from a local wheel file
 
 ```bash 
 $ cd app
-$ python3 -m venv .venv
+$ python -m venv .venv
 $ source .venv/bin/activate
 ```
 
