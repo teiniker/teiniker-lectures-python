@@ -386,8 +386,6 @@ pytest allows you to run a subset of tests in several ways:
 
 * [pytest](https://docs.pytest.org/en/stable/)
 
-2022)
-
 * Brian Okken. **Python Testing with pytest: Simple, Rapid, Effective, and Scalable**. The Pragmatic Programmers, 2nd edition 2022. 
 
 *Egon Teiniker, 2020-2026, GPL v3.0*
