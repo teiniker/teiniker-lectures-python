@@ -1,6 +1,7 @@
 # Build Automation
 
 * [Build Steps](build-steps/README.md)
+    - Example: [bytecode](build-steps/bytecode/)
 
 * Project Layout
     - [Introduction](project-layout/introduction/README.md)
