@@ -33,10 +33,19 @@ To use the package, end users must:
 
 These last 2 steps are typically performed by **pip** when an end user runs `pip install`.
 
+## Setup
+
+Before building your package, ensure the necessary tools are installed (use a virtual environment):
+
+```bash
+$ pip install build twine
+```
+
+- `build` is used to create source and wheel distributions.
+- `twine` is used to upload distributions to PyPI and verify them.
 
 
 ## Create a Python Package 
-
 
 ### Source Tree 
 
@@ -62,7 +71,7 @@ The configuration file depends on the tool used to create the build artifacts.
 
 At a minimum, the `pyproject.toml` file needs a `[build-system]` table specifying your build tool. 
 
-The particular build tool you choose dictates what additional information 
+The particular build tool we choose dictates what additional information 
 is required in the `pyproject.toml` file. For example, we might specify:
 
 * A `[project]` table containing project Core Metadata (name, version, author and so forth),
@@ -117,16 +126,9 @@ where = ["src"]
 
 ### Build Package
 
-Before building your package, ensure the necessary tools are installed (use a virtual environment):
 
-```bash
-$ pip install build twine
-```
+#### Create a Source Distribution
 
-- `build` is used to create source and wheel distributions.
-- `twine` is used to upload distributions to PyPI and verify them.
-
-* **The source distribution (sdist)**:
 A source distribution contains enough to install the package from source 
 in an end user’s Python environment. As such, it needs the package source, 
 and may also include tests and documentation. 
@@ -139,14 +141,24 @@ The build package knows how to invoke your build tool to create one of these:
 $ python -m build --sdist source-tree-directory
 ```
 
-* **The built distributions (wheels)**:
+_Example:_ Build a source package  
+```bash
+$ cd algorithm 
+$ python -m build --sdist .
+
+├── dist
+│   └── simple_lib-0.1.0.tar.gz
+```
+
+
+#### Create a Built Distributions
 
 A built distribution contains only the files needed for an end user’s Python 
 environment. No compilation steps are required during the install, and the 
 **wheel file** can simply be unpacked into the site-packages directory. 
 This makes the install faster and more convenient for end users.
 
-A pure Python package typically needs only one “generic” wheel. 
+A pure Python package typically needs only one **generic wheel**. 
 
 A package with compiled binary extensions needs a wheel for each supported 
 combination of Python interpreter, operating system, and CPU architecture 
@@ -160,16 +172,13 @@ The build package knows how to invoke your build tool to create one of these:
 $ python -m build --wheel source-tree-directory
 ```
 
-
-_Example:_ Build a source and wheel package and check the distributions 
+_Example:_ Build a wheel package 
 ```bash
 $ cd algorithm 
-$ python -m build --sdist .
 $ python -m build --wheel .
 
 ├── dist
-│   ├── simple_lib-0.1.0-py3-none-any.whl
-│   └── simple_lib-0.1.0.tar.gz
+│   └── simple_lib-0.1.0-py3-none-any.whl
 ```
 
 ### Build Bytecode Package
@@ -187,6 +196,7 @@ We can convert a regular wheel file to bytecode with the following command:
 
 ```bash
 $ python -m pyc_wheel dist/simple_lib-0.1.0-py3-none-any.whl 
+
 Listing '/tmp/tmpkhaigb9_'...
 Listing '/tmp/tmpkhaigb9_/algorithm'...
 Compiling '/tmp/tmpkhaigb9_/algorithm/__init__.py'...
@@ -196,8 +206,8 @@ Deleting py file: /tmp/tmpkhaigb9_/algorithm/fibonacci.py
 Deleting py file: /tmp/tmpkhaigb9_/algorithm/__init__.py
 ```
 
-To verify the result of this transformation, unzip the wheel file in a 
-temporary directory:
+To verify the result of this transformation, unzip the wheel 
+file in a temporary directory:
 
 ```bash
 $ mkdir tmp
@@ -219,14 +229,9 @@ is distributed, protecting the source code while still allowing the package to
 be installed and used with the compatible Python version.
 
 
-
-### Upload to the Package Distribution Service
-
-For our initial experiments, it is sufficient to store the package files locally.
-
 ## Install and Use a Python Package 
 
-Now that the package is published, end users can download and install the package into 
+Now that the package is created, end users can install the package into 
 their Python environment. Typically this is done with **pip**. 
 
 _Example:_ Install from a local wheel file
@@ -260,8 +265,6 @@ $ python demo.py
 ```bash
 $ deactivate
 ```
-
-
 
 
 ## References
