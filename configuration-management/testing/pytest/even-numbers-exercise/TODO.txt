@@ -1,0 +1,15 @@
+Exercise: Testing - Even Numbers
+-------------------------------------------------------------------------------
+
+For the given implementation of the "even_numbers()" function, implement
+the following test cases:
+
+A) [5, 2, 1, 8, 4] => [2, 8, 4]
+
+B) [1, 3, 5, 7] => []
+
+C) [] => []
+
+D) None => ValueError exception
+
+Implement these test cases in a "test_even_numers.py" file.
