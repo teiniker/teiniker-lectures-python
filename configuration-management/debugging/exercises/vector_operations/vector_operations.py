@@ -51,3 +51,5 @@ if __name__ == "__main__":
 
     v_scalar = vector_scalar_product(v1, v2)
     assert 1*10 + 2*20 + 3*30 + 4*40 + 5*50 + 6*60 + 7*70 + 8*80 + 9*90 == v_scalar
+
+    print("All assertions passed!")

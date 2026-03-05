@@ -13,8 +13,10 @@ def insertion_sort(arr):
         arr[j+1] = key
 
 
-# Verify
+if __name__ == "__main__":
+    # Verify
+    list_of_nums = [5, 2, 1, 8, 4]
+    insertion_sort(list_of_nums)
+    assert list_of_nums == [1, 2, 4, 5, 8]
 
-list_of_nums = [5, 2, 1, 8, 4]
-insertion_sort(list_of_nums)
-assert list_of_nums == [1, 2, 4, 5, 8]
+    print("All assertions passed!")

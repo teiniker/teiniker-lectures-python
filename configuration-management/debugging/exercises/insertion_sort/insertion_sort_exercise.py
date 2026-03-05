@@ -7,7 +7,6 @@ def insertion_sort(arr):
             j -= 1
         arr[j] = key
 
-# Verify
 list_of_nums = [5, 2, 1, 8, 4]
 insertion_sort(list_of_nums)
 print(list_of_nums)

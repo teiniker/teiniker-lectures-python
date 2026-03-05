@@ -12,3 +12,5 @@ if __name__ == "__main__":
     numbers = [5, 2, 1, 8, 4, 3, 7, 1, 1, 4]
     count = list_count_element(numbers, 1)
     assert count == 3
+
+    print("All assertions passed!")

@@ -12,9 +12,12 @@ def bubble_sort(nums):
                 swapped = True
 
 
-# Setup
-random_list_of_nums = [5, 2, 1, 8, 4]
-# Exercise
-bubble_sort(random_list_of_nums)
-# Verify
-assert random_list_of_nums == [1, 2, 4, 5, 8]
+if __name__ == "__main__":
+    # Setup
+    random_list_of_nums = [5, 2, 1, 8, 4]
+    # Exercise
+    bubble_sort(random_list_of_nums)
+    # Verify
+    assert random_list_of_nums == [1, 2, 4, 5, 8]
+
+    print("All assertions passed!")

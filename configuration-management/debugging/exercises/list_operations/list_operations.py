@@ -17,16 +17,16 @@ def list_sum(l1, l2):
 # from both l1 and l2 simultaneously, without explicitly using
 # their indices.
 
+if __name__ == "__main__":
+    k = 7
+    a = [5, 2, 1]
+    b = [3, 7, 11]
 
-k = 7
-a = [5, 2, 1]
-b = [3, 7, 11]
+    # Add assert statements to automatically observe values
+    list_multiple =  list_multiple(k, a)
+    assert list_multiple == [7*5, 7*2, 7*1]
 
-print(__debug__)
+    list_sum =  list_sum(a, b)
+    assert list_sum == [5+3, 2+7, 1+11]
 
-# Add assert statements to automatically observe values
-list_multiple =  list_multiple(k, a)
-assert list_multiple == [7*5, 7*2, 7*1]
-
-list_sum =  list_sum(a, b)
-assert list_sum == [5+3, 2+7, 1+11]
+    print("All assertions passed!")
