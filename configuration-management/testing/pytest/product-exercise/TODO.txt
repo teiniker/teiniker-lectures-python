@@ -1,0 +1,21 @@
+Exercise: Testing - Product
+-------------------------------------------------------------------------------
+
+For the given implementation of the "Product" class, implement the following 
+parts:
+
+A) Create a class called "TestProduct" and implement setup_method() and 
+    teardown_method().
+    In the setup phase create the following object: Product("dvd", 1799) 
+
+B) test_product(): Verify "description" and "price"
+
+C) test_product_invalid_price(): set the "price" to -1790 
+
+D) test_product_invalid_description(): Set the "description" to ""
+
+E) test_product_str(): Test the str() function => "dvd (1799)"
+
+F) test_product_repr(self): Test the repr() function => "Product(description='dvd', price=1799)"
+
+Implement this test class in a "test_product.py" file.
