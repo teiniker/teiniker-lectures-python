@@ -1,9 +1,20 @@
 # Test Automation Using PyTest 
 
-* [Introduction](pytest/introduction/README.md)
+* **PyTest Framework**
+    - [Introduction](pytest/introduction/README.md)
 
-* Example: [fibonacci](pytest/fibonacci/)
-* Example: [resistor](pytest/resistor/)
-* Example: [resistor-fixture](pytest/resistor-fixture/)
+    - Example: [fibonacci](pytest/fibonacci/)
+    - Example: [resistor](pytest/resistor/)
+    - Example: [resistor-fixture](pytest/resistor-fixture/)
+
+    - Exercise: [comparator](pytest/comparator-exercise/) ([Model Solution](pytest/comparator/))
+    - Exercise: [even-numbers](pytest/even-numbers-exercise/) ([Model Solution](pytest/even-numbers/))
+    - Exercise: [product](pytest/product-exercise/) ([Model Solution](pytest/product/))
+
+
+* **Unittest Framework**
+    - [Introduction](unittest/introduction/README.md)
+
+    - Example: [unittest-demo](unittest/unittest-demo/)
 
 *Egon Teiniker, 2020-2026, GPL v3.0*
