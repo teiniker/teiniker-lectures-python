@@ -6,6 +6,7 @@ def list_even_numbers(nums):
             result.append(n)
     return result
 
-numbers = [5, 2, 1, 8, 4]
-even_numbers = list_even_numbers(numbers)
-assert [2, 8, 4] == even_numbers
+if __name__ == "__main__":
+    numbers = [5, 2, 1, 8, 4]
+    even_numbers = list_even_numbers(numbers)
+    assert [2, 8, 4] == even_numbers
