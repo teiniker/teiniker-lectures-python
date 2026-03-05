@@ -1,0 +1,13 @@
+Exercise: Testing - Comparator
+-------------------------------------------------------------------------------
+
+For the given implementation of the "compare()" function, implement
+the following test cases using the unittest framework:
+
+A) (7, 3) => 1
+
+B) (3, 7) => -1
+
+C) (7, 7) => 0
+
+Implement these test cases in a "comparator_test.py" file.

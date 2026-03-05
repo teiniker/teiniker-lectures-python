@@ -17,4 +17,6 @@
 
     - Example: [unittest-demo](unittest/unittest-demo/)
 
+    - Exercise: [comparator](unittest/comparator-exercise/) ([Model Solution](unittest/comparator/))
+
 *Egon Teiniker, 2020-2026, GPL v3.0*
