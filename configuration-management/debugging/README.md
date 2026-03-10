@@ -5,6 +5,7 @@
 * [Logging](logging/)
 
 * [Interactive Debugger](debugger/)
+    - [PyTest Debugging](pytest-debugging/README.md)
 
 * [Assert Statements](assertions/)
 
