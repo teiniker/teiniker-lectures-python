@@ -5,10 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Current File",
-            "type": "python",
+            "name": "Debug Pytest (Active Folder)",
+            "type": "debugpy",
             "request": "launch",
-            "program": "${file}",
+            "module": "pytest",
+            "args": [
+                "${fileDirname}"
+            ],
             "console": "integratedTerminal"
         }
     ]
