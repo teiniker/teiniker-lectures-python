@@ -19,9 +19,10 @@ def list_sum(nums):
         total += n
     return total
 
-numbers = [5, 2, 1, 8, 4]
 
-minimum = list_min(numbers)
-maximum = list_max(numbers)
-sum_of_elements = list_sum(numbers)
-print(f"min = {minimum}, max = {maximum}, sum = {sum_of_elements}")
+if __name__ == "__main__":
+    numbers = [5, 2, 1, 8, 4]
+    minimum = list_min(numbers)
+    maximum = list_max(numbers)
+    sum_of_elements = list_sum(numbers)
+    print(f"min = {minimum}, max = {maximum}, sum = {sum_of_elements}")

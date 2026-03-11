@@ -5,6 +5,5 @@ def even_numbers(nums):
     result = []
     for n in nums:
         if n % 2 == 0:
-            # Bug: result = n
             result.append(n)
     return result
