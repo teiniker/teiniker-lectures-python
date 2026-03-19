@@ -24,7 +24,7 @@ This is done by invoking the `open()` built-in function.
 `open()` has a single required argument that is the path to the file. 
 `open()` has a single return, the **file object**.
 
-It’s important to remember that it’s our responsibility to close the file.
+It’s important to remember that it’s our responsibility to **close the file**.
 There are two ways that we can use to ensure that a file is closed properly, even when encountering an error:
 * The first way to close a file is to use the **try-finally** block:
     ```Python
