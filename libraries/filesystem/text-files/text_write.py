@@ -1,3 +1,9 @@
+import os
+
+# Get the current working directory
+cwd = os.getcwd()
+print(cwd)
+
 with open('data.txt', 'r', encoding="utf-8") as in_file:
     content = in_file.readlines()
     print(content)

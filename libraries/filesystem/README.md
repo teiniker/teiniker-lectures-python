@@ -14,6 +14,23 @@ analyzing raw byte data, all of these situations require reading or writing a fi
 * [JSON Files](json-files/)
 
 
+## VS Code Path Setting 
+
+When executing a Python script with Code Runner, the file's directory should 
+be set as the working directory.
+
+To enable this setting, add the following configuration to the `settings.json` 
+file:
+
+```json
+  //...
+  "code-runner.fileDirectoryAsCwd": true,
+  //...
+```
+
+We may need to restart VS Code for the changes to take effect.
+
+
 ## Tutorials 
 
 * [YouTube (Corey Schafer): Context Managers - Efficiently Managing Resources](https://youtu.be/-aKFBoZpiqA)
