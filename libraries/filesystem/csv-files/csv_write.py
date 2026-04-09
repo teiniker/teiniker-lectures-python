@@ -1,4 +1,9 @@
 import csv
+import os
+
+# Get the current working directory
+cwd = os.getcwd()
+print(cwd)
 
 with open('tmp.csv', 'w', encoding="utf-8") as file:
     csv_writer = csv.writer(file, delimiter=',', quoting=csv.QUOTE_NONNUMERIC)
