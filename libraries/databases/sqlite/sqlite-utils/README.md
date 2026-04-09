@@ -1,4 +1,4 @@
-# sqlite-utils
+# SQLite Utils
 
 **CLI tool and Python library for manipulating SQLite databases**.
 

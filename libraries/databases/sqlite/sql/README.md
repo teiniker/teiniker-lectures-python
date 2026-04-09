@@ -6,6 +6,7 @@ This is true when **interactively typing commands** or when using
 the **programming API**.
 
 * [SQL Basics](basics/README.md)
+    - Example: [users table](basics/users.md)
 * [SQL SELECT Statements](select/README.md)
 * [SQL Table Relationships](table-relations/README.md)
 

@@ -579,8 +579,6 @@ Both `COMMIT` and `ROLLBACK` will end the current transaction, putting
 SQLite back into autocommit mode.
 
 
-
-
 ## References
 
 * Jay A. Kreibich. **Using SQLite: Small. Fast. Reliable. Choose Any Three.** O'Reilly Media, 2010. 

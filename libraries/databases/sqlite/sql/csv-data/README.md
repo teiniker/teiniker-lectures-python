@@ -1,4 +1,4 @@
-# Handle CSV Data in SQLite
+# CSV Data in SQLite
 
 SQLite provides a convenient way to import and export CSV data using the 
 `.import` and `.export` commands. 
