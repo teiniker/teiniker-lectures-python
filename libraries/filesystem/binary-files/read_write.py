@@ -1,3 +1,9 @@
+import os
+
+# Get the current working directory
+cwd = os.getcwd()
+print(cwd)
+
 with open('data.bin','rb') as in_file:
     data = in_file.read()
     print(data)
