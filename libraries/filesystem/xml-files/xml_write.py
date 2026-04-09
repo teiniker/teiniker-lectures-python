@@ -1,4 +1,9 @@
+import os
 import xml.etree.ElementTree as et
+
+# Get the current working directory
+cwd = os.getcwd()
+print(cwd)
 
 user_id = 1
 username = 'homer'

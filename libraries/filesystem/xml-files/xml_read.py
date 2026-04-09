@@ -1,4 +1,9 @@
+import os
 import xml.etree.ElementTree as et
+
+# Get the current working directory
+cwd = os.getcwd()
+print(cwd)
 
 # Open and parse XML from the file
 with open('user.xml', 'r', encoding='utf-8') as file:
