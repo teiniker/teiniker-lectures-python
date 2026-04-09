@@ -1,4 +1,9 @@
 import json
+import os
+
+# Get the current working directory
+cwd = os.getcwd()
+print(cwd)
 
 data = {
     "person": {

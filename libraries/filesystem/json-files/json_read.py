@@ -1,4 +1,9 @@
 import json
+import os
+
+# Get the current working directory
+cwd = os.getcwd()
+print(cwd)
 
 with open('data.json', 'r', encoding="utf-8") as file:
     data = json.load(file)
