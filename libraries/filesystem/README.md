@@ -7,12 +7,13 @@ analyzing raw byte data, all of these situations require reading or writing a fi
 
 * [Text Files](text-files/)
 
-* [Binary Files](binary-files/)
-
 * [CSV Files](csv-files/)
 
 * [JSON Files](json-files/)
 
+* [XML Files](xml-files/)
+
+* [Binary Files](binary-files/)
 
 ## VS Code Path Setting 
 
