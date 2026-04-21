@@ -98,6 +98,7 @@ Python’s **socket module** provides an interface to the Berkeley sockets API
 which is convenient and maps directly to system calls.
 
 * `socket()`: Creates a socket object.
+    - socket.AF_INET: Address Family Internet,  IPv4 addresses for the socket.
     - socket.SOCK_STREAM: TCP socket.
     - socket.SOCK_DGRAM: UDP socket.
 
