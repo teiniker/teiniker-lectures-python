@@ -41,7 +41,7 @@ applications. It organizes code into three interconnected components:
 
 We start the web application from the command line:
 ```
-$ python3 app.py
+$ python app.py
 ```
 
 Using a Browser, we can access the web page at:
@@ -94,14 +94,16 @@ def translate():
 
     return render_template('translation.html', word=word, translation=translation)
 ```
+
 - This route handles form submissions sent via `POST` method to `/translator`.
 
 - `request.form.get(...)` retrieves user input from the form.
     - `language`: The selected language (`Deutsch` or anything else 
         assumed to be `French`).
-    - word: The word the user wants translated.
+    - `word`: The word the user wants translated.
 
 - Based on the selected language, the appropriate translation service is instantiated.
+
 - These services implement a method `.translate(word)` that returns the translated word.
 
 - The app then renders `translation.html`, passing the original word 
@@ -115,7 +117,9 @@ def translate():
 if __name__ == '__main__':
     app.run(port=8080, debug=True)
 ```
+
 - Starts the development server on port `8080`.
+
 - `debug=True` enables hot reloading and detailed error messages for easier development.
 
 
@@ -149,4 +153,4 @@ The following table shows the mapping of MVC components to the Flask code:
 | **Controller**| Flask route functions: `index()`, `translate()` |
 
 
-*Egon Teiniker, 2020-2025, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*
