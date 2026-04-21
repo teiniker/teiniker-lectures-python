@@ -6,10 +6,10 @@ bother about low-level details such as protocols, thread management etc.
 
 ## Setup
 
-Install and update using `pip3`:
+Install and update using `pip`:
 
 ```
-$ pip3 install Flask
+$ pip install Flask
 ```
 
 
