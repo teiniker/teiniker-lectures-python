@@ -10,5 +10,5 @@
 
 * [Flask](flask/): Implementing web services and web applications
 
-  *Egon Teiniker, 2020-2026, GPL v3.0*
+*Egon Teiniker, 2020-2026, GPL v3.0*
 

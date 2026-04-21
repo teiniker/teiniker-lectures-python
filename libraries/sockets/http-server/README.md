@@ -1,5 +1,11 @@
 # Simple HTTP Server 
 
+We start the single file server:
+
+```bash
+$ python http_server.py
+```
+
 
 ## Browser  
 
@@ -34,3 +40,5 @@ $ curl -v http://localhost:8080/hello.html
 </html>
 * Closing connection 0
 ```
+
+*Egon Teiniker, 2020-2026, GPL v3.0*
