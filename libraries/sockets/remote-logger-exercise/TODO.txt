@@ -12,3 +12,7 @@ A) logger.py
     closes the connection.
 
 Tip: Use the given log_message() function to write the messages to the file.    
+
+Test your implementations:
+$ python logger.py 
+$ python client.py 
